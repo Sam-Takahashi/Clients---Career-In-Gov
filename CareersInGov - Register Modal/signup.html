@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css" />
+    <script src="main.js" defer></script>
+    <script src="validation.js" defer></script>
+  </head>
+  <body>
+    <!-- Modal Trigger -->
+    <button
+      id="modal__trigger"
+      onclick="openModal()"
+      style="
+        padding: 10px 30px;
+        border: none;
+        background: #112d51;
+        color: #fff;
+        cursor: pointer;
+      "
+    >
+      Open Modal
+    </button>
+
+
+    <!-- Modal -->
+    <section id="cig__apply_modal" class="cig-modal-container">
+      <div class="cig-modal-wrapper cig-toggle-wrapper">
+        <div class="cig-user cig-signin-box">
+          <div class="cig-img-wrapper cig--card-border-half-radius">
+            <!-- modification option: Change to selected jobs feature image(s) -->
+            <img src="./assets/signin.jpg" alt="" />
+          </div>
+          <div class="cig-form-wrapper">
+            <div class="cig-form-content-wrapper">
+              <form id="form_signin" action="" class="forms">
+                <h2>Sign In</h2>
+                <p class="cig--job-info">
+                  Apply to Wastewater Chief Plant Operator at Coachella Valley
+                  Water District
+                </p>
+                <div class="input-control">
+                  <input id="email" name="email" placeholder="Email" />
+                  <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                  <div class="error"></div>
+                </div>
+                <input type="submit" value="LOGIN" />
+              </form>
+              <div class="cig-text-divider">or</div>
+              <a href="javascript:void(0)" class="cig-linkedin-cta"
+                ><span>Login with Linkedin</span></a
+              >
+              <p class="cig-form-toggle">
+                Don't have an account ?
+                <a href="#" onclick="toggleForm();">Register</a>
+              </p>
+            </div>
+            <div class="cig-user-email-wrapper cig-user-email-wrapper-colored">
+              <strong>Not interested in registering right now?</strong>
+              <p>
+                Just enter your email and proceed to the job application. We
+                will send you a link to the registration page for you to fill
+                out at your convenience.
+              </p>
+              <form id="form_convenience" action="" class="forms">
+                <div class="input-control">
+                  <input
+                    name="email"
+                    placeholder="Email"
+                    class="cig-input-white"
+                  />
+                  <div class="error"></div>
+                </div>
+                <input type="submit" value="APPLY" />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="cig-user cig-signup-box">
+          <div class="cig-form-wrapper cig-form-wrapper-gradient">
+            <div class="cig-form-content-wrapper-full">
+              <form id="form_register" action="" class="forms">
+                <h2>REGISTER</h2>
+                <p class="cig--job-info">
+                  Apply to Wastewater Chief Plant Operator at Coachella Valley
+                  Water District
+                </p>
+                <div class="input-control">
+                  <input name="email" placeholder="Email" />
+                  <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                  <div class="error"></div>
+                </div>
+                <div class="input-control">
+                  <input
+                    type="password"
+                    name="confirm_password"
+                    placeholder="Confirm password"
+                  />
+                  <div class="error"></div>
+                </div>
+                
+                <div class="input-control-row">
+                  <input
+                    type="checkbox"
+                    id="register_terms"
+                    name="terms"
+                    value="terms"
+                    checked
+                  />
+                  <label for="register_terms">
+                    <a href="https://www.careersingovernment.com/terms-of-use/" target="_blank" class="cig-terms">Read terms of use</a>
+                  </label>
+                  <div class="error"></div>
+                </div>
+
+                <input type="submit" name="" value="REGISTER" />
+              </form>
+              <div class="cig-text-divider">or</div>
+              <a href="javascript:void(0)" class="cig-linkedin-cta"
+                ><span>Register with Linkedin</span></a
+              >
+              <p class="cig-form-toggle">
+                Already have an account?
+                <a href="#" onclick="toggleForm();">Log In</a>
+              </p>
+            </div>
+          </div>
+          <div
+            class="cig-img-wrapper cig-img-wrapper-rotate cig--card-border-half-radius"
+          >
+            <img src="./assets/signup.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

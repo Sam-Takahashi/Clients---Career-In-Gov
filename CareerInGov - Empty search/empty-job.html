@@ -1,0 +1,1996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search - Empty</title>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS/JS -->
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/search.css" />
+    <link rel="stylesheet" href="../css/emptyjobs.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/search.js" defer></script>
+    <script src="../js/emptyjob.js" defer></script>
+  </head>
+  <body>
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!-- NAVBAR ------------------------ -->
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <header class="cig--sticky-navbar">
+      <!-- ------------- -->
+      <!-- PC Navigation -->
+      <!-- ------------- -->
+      <nav class="cig--navbar-pc">
+        <section class="cig--navbar-wrapper-firstchild-wrapper">
+          <div class="cig--navbar-wrapper-firstchild">
+            <!-- Logo -->
+            <a href="javascript:void(0)">
+              <img src="../assets/cig-logo.png" alt="Careers In Government" />
+            </a>
+            <div class="cig--navbar-links-wrapper">
+              <!-- Nav links -->
+              <ul>
+                <li id="dropdown__products" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__products"
+                    class="dropdown__link cig--navbar-link-plain"
+                  >
+                    PRODUCTS
+                    <svg
+                      class="dropdown__icon dropdown__icon-arrow-down"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Employer Products</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Job Seeker Products</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="dropdown__resources" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__resources"
+                    class="dropdown__link cig--navbar-link-plain"
+                    >RESOURCES
+                    <svg
+                      class="dropdown__icon dropdown__icon-arrow-down"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Job Seeker Tools</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Gov Talk</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Community</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Location Spotlight</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Hire Government Initiative</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Blog</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="dropdown__about" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__about"
+                    class="dropdown__link cig--navbar-link-plain"
+                    >ABOUT US
+                    <svg
+                      class="dropdown__icon dropdown__icon-arrow-down"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >About Us</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Contact Us</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- Rounded Buttons -->
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="cig--navbar-link-rounded cig--navbar-link-rounded-light"
+                    >Job Seeker</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="cig--navbar-link-rounded cig--navbar-link-rounded-light"
+                    >Employer</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="cig--navbar-link-rounded cig--navbar-link-rounded-dark"
+                    >Log In</a
+                  >
+                </li>
+                <!-- Social links -->
+                <li>
+                  <a href="javascript:void(0)" class="cig--navbar-social-links">
+                    <span class="cig--navbar-social-link-in"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="cig--navbar-social-links">
+                    <span class="cig--navbar-social-link-tw"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="cig--navbar-social-links">
+                    <span class="cig--navbar-social-link-fb"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="cig--navbar-wrapper-secondchild-wrapper">
+          <div class="cig--navbar-wrapper-secondchild">
+            <!-- Search filters -->
+            <ul class="cig--filter-menu">
+              <!-- Location -->
+              <li class="menu__item">
+                <a class="menu__link" href="#location">Location</a>
+                <section
+                  class="cig--dropdown submenu"
+                  id="location"
+                  tabindex="-1"
+                >
+                  <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search.."
+                    class="cig--search-filter"
+                  />
+
+                  <div
+                    id=""
+                    class="hidden-radio checkbox-container cig--dropdown-scroll-wrapper"
+                  >
+                    <!-- Start loop -->
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="ca"
+                        value="California"
+                        name="location"
+                      />
+                      <label for="ca"><span>California (7389)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="tx"
+                        value="Texas"
+                        name="location"
+                      />
+                      <label for="tx"><span>Texas (1054)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="nv"
+                        value="Nevada"
+                        name="location"
+                      />
+                      <label for="nv"><span>Nevada (398)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="ws"
+                        value="Washington"
+                        name="location"
+                      />
+                      <label for="ws"><span>Washington (228)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="az"
+                        value="Arizona"
+                        name="location"
+                      />
+                      <label for="az"><span>Arizona (209)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="fd"
+                        value="Florida"
+                        name="location"
+                      />
+                      <label for="fd"><span>Florida (170)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="cd"
+                        value="Colorado"
+                        name="location"
+                      />
+                      <label for="cd"><span>Colorado (118)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="sc"
+                        value="South Carolina"
+                        name="location"
+                      />
+                      <label for="sc"><span>South Carolina (108)</span></label>
+                    </div>
+                    <!-- End loop -->
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button
+                      class="cig--dropdown-result show-results-location-radio"
+                    >
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <!-- Categories -->
+              <li class="menu__item">
+                <a class="menu__link" href="#categories">Categories</a>
+                <section
+                  class="cig--dropdown submenu"
+                  id="categories"
+                  tabindex="-1"
+                >
+                  <input
+                    type="text"
+                    id="myInput"
+                    placeholder="Search.."
+                    class="cig--search-filter"
+                  />
+
+                  <div
+                    id=""
+                    class="checkbox-container cig--dropdown-scroll-wrapper"
+                  >
+                    <label>
+                      <input type="checkbox" value="Accounting and Finance" />
+                      <span>Accounting and Finance</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Administration and Management"
+                      />
+                      <span>Administration and Management</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Administrative Analysis and Research"
+                      />
+                      <span>Administrative Analysis and Research</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Agriculture or Farm or Ranch"
+                      />
+                      <span>Agriculture or Farm or Ranch</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Animal Control or Services"
+                      />
+                      <span>Animal Control or Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Architecture" />
+                      <span>Architecture</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Agriculture / Farm / Ranch Related"
+                      />
+                      <span>Agriculture / Farm / Ranch Related</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Aviation or Harbor" />
+                      <span>Aviation or Harbor</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Building Maintenance" />
+                      <span>Building Maintenance</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Building and Safety" />
+                      <span>Building and Safety</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Clerical and Administrative Support"
+                      />
+                      <span>Clerical and Administrative Support</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Code Enforcement and Inspections"
+                      />
+                      <span>Code Enforcement and Inspections</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Community and Economic Development"
+                      />
+                      <span>Community and Economic Development</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Community Relations or PR and Marketing"
+                      />
+                      <span>Community Relations or PR and Marketing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Construction and Skilled Trades"
+                      />
+                      <span>Construction and Skilled Trades</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="CORRECTIONS" />
+                      <span>CORRECTIONS</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Court Administration" />
+                      <span>Court Administration</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Criminology and Forensics"
+                      />
+                      <span>Criminology and Forensics</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Custodial and Janitorial" />
+                      <span>Custodial and Janitorial</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Customer Service" />
+                      <span>Customer Service</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Dispatch and Telecommunications"
+                      />
+                      <span>Dispatch and Telecommunications</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Education and Training" />
+                      <span>Education and Training</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Emergency Management" />
+                      <span>Emergency Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Engineering" />
+                      <span>Engineering</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Environmental Services" />
+                      <span>Environmental Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Facilities Management" />
+                      <span>Facilities Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fire and EMS" />
+                      <span>Fire and EMS</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fleet Management" />
+                      <span>Fleet Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Forestry" />
+                      <span>Forestry</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Fundraising or Grants Administration"
+                      />
+                      <span>Fundraising or Grants Administration</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="GIS and Surveying" />
+                      <span>GIS and Surveying</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Grounds and Landscaping Services"
+                      />
+                      <span>Grounds and Landscaping Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Historic Preservation" />
+                      <span>Historic Preservation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Housing" />
+                      <span>Housing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Human and Social Services"
+                      />
+                      <span>Human and Social Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Human Resources and Personnel"
+                      />
+                      <span>Human Resources and Personnel</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Information Technology and Communication Services"
+                      />
+                      <span
+                        >Information Technology and Communication Services</span
+                      >
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Internship" />
+                      <span>Internship</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Legal Services" />
+                      <span>Legal Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Library Services" />
+                      <span>Library Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Marketing and Public Relations"
+                      />
+                      <span>Marketing and Public Relations</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Municipal or County Clerk"
+                      />
+                      <span>Municipal or County Clerk</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Museum and Arts" />
+                      <span>Museum and Arts</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Natural Resources" />
+                      <span>Natural Resources</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="non-profit management" />
+                      <span>Non-profit Management</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Nutrition and Food Services"
+                      />
+                      <span>Nutrition and Food Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Parks and Recreation" />
+                      <span>Parks and Recreation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Planning and Development" />
+                      <span>Planning and Development</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Political or Public Affairs"
+                      />
+                      <span>Political or Public Affairs</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Probation" />
+                      <span>Probation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Project Management" />
+                      <span>Project Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Health" />
+                      <span>Public Health</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Public Information and Intergovernmental Affairs"
+                      />
+                      <span
+                        >Public Information and Intergovernmental Affairs</span
+                      >
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Safety" />
+                      <span>Public Safety</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Works" />
+                      <span>Public Works</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Purchasing and Warehouse" />
+                      <span>Purchasing and Warehouse</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Real Estate" />
+                      <span>Real Estate</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Records Management" />
+                      <span>Records Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Redevelopment" />
+                      <span>Redevelopment</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Regulatory and Licensing" />
+                      <span>Regulatory and Licensing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Risk Management and Insurance Claims"
+                      />
+                      <span>Risk Management and Insurance Claims</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Sales" />
+                      <span>Sales</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Sanitation and Solid Waste"
+                      />
+                      <span>Sanitation and Solid Waste</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Sciences and Laboratory" />
+                      <span>Sciences and Laboratory</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Tourism and Convention Services"
+                      />
+                      <span>Tourism and Convention Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Transportation or Transit"
+                      />
+                      <span>Transportation or Transit</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Utilities" />
+                      <span>Utilities</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Veteran Services" />
+                      <span>Veteran Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Water and Wastewater Treatment"
+                      />
+                      <span>Water and Wastewater Treatment</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Other" />
+                      <span>Other</span>
+                    </label>
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button class="cig--dropdown-result show-results-button">
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <!-- Job Type -->
+              <li class="menu__item">
+                <a class="menu__link" href="#job_type">Job Type</a>
+                <section
+                  class="cig--dropdown submenu"
+                  id="job_type"
+                  tabindex="-1"
+                >
+                  <div class="hidden-radio cig--dropdown-wrapper">
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="any"
+                        value="Any Job Type"
+                        name="type"
+                      />
+                      <label for="any">Any Job Type</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="full"
+                        value="Full Time"
+                        name="type"
+                      />
+                      <label for="full">Full Time</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="part"
+                        value="Part Time"
+                        name="type"
+                      />
+                      <label for="part">Part Time</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="variable"
+                        value="Variable Shift"
+                        name="type"
+                      />
+                      <label for="variable">Variable Shift</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="temp"
+                        value="Temporary"
+                        name="type"
+                      />
+                      <label for="temp">Temporary</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="contractor"
+                        value="Contractor"
+                        name="type"
+                      />
+                      <label for="contractor">Contractor</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="intern"
+                        value="Intern"
+                        name="type"
+                      />
+                      <label for="intern">Intern</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="season"
+                        value="Seasonal"
+                        name="type"
+                      />
+                      <label for="season">Seasonal</label>
+                    </div>
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button
+                      class="cig--dropdown-result show-results-type-radio"
+                    >
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <!-- Search bar -->
+              <li>
+                <form action="" class="cig--navbar-search-form">
+                  <input type="text" placeholder="Keywords" />
+                  <button class="cig--navbar-search-btn"><span></span></button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </nav>
+      <!-- ----------------- -->
+      <!-- MOBILE Navigation -->
+      <!-- ----------------- -->
+      <nav class="cig--navbar-mobile">
+        <section class="mobile-menu-firstchild">
+          <!-- Logo -->
+          <a href="javascript:void(0)">
+            <img
+              src="../assets/cig-logo.png"
+              alt="Careers In Government"
+              class="cig--logo-mobile"
+            />
+          </a>
+          <!-- Search bar -->
+          <form action="" class="cig--navbar-search-form">
+            <input type="text" placeholder="Keywords" />
+            <button class="cig--navbar-search-btn"><span></span></button>
+          </form>
+          <!-- Dropdown Trigger -->
+          <div class="menu-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- Dropdown Menu -->
+          <div class="header__nav">
+            <nav class="mobile-nav">
+              <ul class="nav__list">
+                <li id="dropdown__products-mobile" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__products-mobile"
+                    class="dropdown__link bob cig--navbar-link-plain"
+                    >PRODUCTS
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Employer Products</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Job Seeker Products</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="dropdown__resources-mobile" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__resources-mobile"
+                    class="dropdown__link cig--navbar-link-plain"
+                    >RESOURCES
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Job Seeker Tools</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Gov Talk</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Community</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Location Spotlight</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Hire Government Initiative</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Blog</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="dropdown__about-mobile" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__about-mobile"
+                    class="dropdown__link cig--navbar-link-plain"
+                    >About Us
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >About Us</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Contact Us</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- Social links -->
+              <div class="mobile-social-links-wrapper">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-social-links"
+                    >
+                      <span class="cig--navbar-social-link-in"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-social-links"
+                    >
+                      <span class="cig--navbar-social-link-tw"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-social-links"
+                    >
+                      <span class="cig--navbar-social-link-fb"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Rounded Buttons -->
+              <div class="mobile-rounded-button-wrapper">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-link-rounded cig--navbar-link-rounded-light"
+                      >Job Seeker</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-link-rounded cig--navbar-link-rounded-light"
+                      >Employer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-link-rounded cig--navbar-link-rounded-dark"
+                      >Log In</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </section>
+        <section class="mobile-menu-secondchild">
+          <div class="cig--navbar-wrapper-secondchild">
+            <!-- Mobile Search Filters -->
+            <ul class="cig--filter-menu">
+              <!-- Location -->
+              <li class="menu__item">
+                <a class="menu__link" href="#location_mobile">Location</a>
+                <section class="submenu" id="location_mobile" tabindex="-1">
+                  <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search.."
+                    class="cig--search-filter"
+                  />
+
+                  <div
+                    class="hidden-radio checkbox-container cig--dropdown-scroll-wrapper"
+                  >
+                    <!-- Start loop -->
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="ca"
+                        value="California"
+                        name="location"
+                      />
+                      <label for="ca"><span>California (7389)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="tx"
+                        value="Texas"
+                        name="location"
+                      />
+                      <label for="tx"><span>Texas (1054)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="nv"
+                        value="Nevada"
+                        name="location"
+                      />
+                      <label for="nv"><span>Nevada (398)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="ws"
+                        value="Washington"
+                        name="location"
+                      />
+                      <label for="ws"><span>Washington (228)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="az"
+                        value="Arizona"
+                        name="location"
+                      />
+                      <label for="az"><span>Arizona (209)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="fd"
+                        value="Florida"
+                        name="location"
+                      />
+                      <label for="fd"><span>Florida (170)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="cd"
+                        value="Colorado"
+                        name="location"
+                      />
+                      <label for="cd"><span>Colorado (118)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="sc"
+                        value="South Carolina"
+                        name="location"
+                      />
+                      <label for="sc"><span>South Carolina (108)</span></label>
+                    </div>
+                    <!-- End loop -->
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button
+                      class="cig--dropdown-result show-results-location-radio"
+                    >
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <!-- Categories -->
+              <li class="menu__item">
+                <a class="menu__link" href="#categories_mobile">Categories</a>
+                <section class="submenu" id="categories_mobile" tabindex="-1">
+                  <input
+                    type="text"
+                    id="myInput"
+                    placeholder="Search.."
+                    class="cig--search-filter"
+                  />
+
+                  <div
+                    id=""
+                    class="checkbox-container cig--dropdown-scroll-wrapper"
+                  >
+                    <label>
+                      <input type="checkbox" value="Accounting and Finance" />
+                      <span>Accounting and Finance</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Administration and Management"
+                      />
+                      <span>Administration and Management</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Administrative Analysis and Research"
+                      />
+                      <span>Administrative Analysis and Research</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Agriculture or Farm or Ranch"
+                      />
+                      <span>Agriculture or Farm or Ranch</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Animal Control or Services"
+                      />
+                      <span>Animal Control or Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Architecture" />
+                      <span>Architecture</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Agriculture / Farm / Ranch Related"
+                      />
+                      <span>Agriculture / Farm / Ranch Related</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Aviation or Harbor" />
+                      <span>Aviation or Harbor</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Building Maintenance" />
+                      <span>Building Maintenance</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Building and Safety" />
+                      <span>Building and Safety</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Clerical and Administrative Support"
+                      />
+                      <span>Clerical and Administrative Support</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Code Enforcement and Inspections"
+                      />
+                      <span>Code Enforcement and Inspections</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Community and Economic Development"
+                      />
+                      <span>Community and Economic Development</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Community Relations or PR and Marketing"
+                      />
+                      <span>Community Relations or PR and Marketing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Construction and Skilled Trades"
+                      />
+                      <span>Construction and Skilled Trades</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="CORRECTIONS" />
+                      <span>CORRECTIONS</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Court Administration" />
+                      <span>Court Administration</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Criminology and Forensics"
+                      />
+                      <span>Criminology and Forensics</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Custodial and Janitorial" />
+                      <span>Custodial and Janitorial</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Customer Service" />
+                      <span>Customer Service</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Dispatch and Telecommunications"
+                      />
+                      <span>Dispatch and Telecommunications</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Education and Training" />
+                      <span>Education and Training</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Emergency Management" />
+                      <span>Emergency Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Engineering" />
+                      <span>Engineering</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Environmental Services" />
+                      <span>Environmental Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Facilities Management" />
+                      <span>Facilities Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fire and EMS" />
+                      <span>Fire and EMS</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fleet Management" />
+                      <span>Fleet Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Forestry" />
+                      <span>Forestry</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Fundraising or Grants Administration"
+                      />
+                      <span>Fundraising or Grants Administration</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="GIS and Surveying" />
+                      <span>GIS and Surveying</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Grounds and Landscaping Services"
+                      />
+                      <span>Grounds and Landscaping Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Historic Preservation" />
+                      <span>Historic Preservation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Housing" />
+                      <span>Housing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Human and Social Services"
+                      />
+                      <span>Human and Social Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Human Resources and Personnel"
+                      />
+                      <span>Human Resources and Personnel</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Information Technology and Communication Services"
+                      />
+                      <span
+                        >Information Technology and Communication Services</span
+                      >
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Internship" />
+                      <span>Internship</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Legal Services" />
+                      <span>Legal Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Library Services" />
+                      <span>Library Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Marketing and Public Relations"
+                      />
+                      <span>Marketing and Public Relations</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Municipal or County Clerk"
+                      />
+                      <span>Municipal or County Clerk</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Museum and Arts" />
+                      <span>Museum and Arts</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Natural Resources" />
+                      <span>Natural Resources</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="non-profit management" />
+                      <span>Non-profit Management</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Nutrition and Food Services"
+                      />
+                      <span>Nutrition and Food Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Parks and Recreation" />
+                      <span>Parks and Recreation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Planning and Development" />
+                      <span>Planning and Development</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Political or Public Affairs"
+                      />
+                      <span>Political or Public Affairs</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Probation" />
+                      <span>Probation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Project Management" />
+                      <span>Project Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Health" />
+                      <span>Public Health</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Public Information and Intergovernmental Affairs"
+                      />
+                      <span
+                        >Public Information and Intergovernmental Affairs</span
+                      >
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Safety" />
+                      <span>Public Safety</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Works" />
+                      <span>Public Works</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Purchasing and Warehouse" />
+                      <span>Purchasing and Warehouse</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Real Estate" />
+                      <span>Real Estate</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Records Management" />
+                      <span>Records Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Redevelopment" />
+                      <span>Redevelopment</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Regulatory and Licensing" />
+                      <span>Regulatory and Licensing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Risk Management and Insurance Claims"
+                      />
+                      <span>Risk Management and Insurance Claims</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Sales" />
+                      <span>Sales</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Sanitation and Solid Waste"
+                      />
+                      <span>Sanitation and Solid Waste</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Sciences and Laboratory" />
+                      <span>Sciences and Laboratory</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Tourism and Convention Services"
+                      />
+                      <span>Tourism and Convention Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Transportation or Transit"
+                      />
+                      <span>Transportation or Transit</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Utilities" />
+                      <span>Utilities</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Veteran Services" />
+                      <span>Veteran Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Water and Wastewater Treatment"
+                      />
+                      <span>Water and Wastewater Treatment</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Other" />
+                      <span>Other</span>
+                    </label>
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button class="cig--dropdown-result show-results-button">
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <!-- Job Type -->
+              <li class="menu__item">
+                <a class="menu__link" href="#job_type_mobile">Job Type</a>
+                <section class="submenu" id="job_type_mobile" tabindex="-1">
+                  <div class="hidden-radio cig--dropdown-wrapper">
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="any"
+                        value="Any Job Type"
+                        name="type"
+                      />
+                      <label for="any">Any Job Type</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="full"
+                        value="Full Time"
+                        name="type"
+                      />
+                      <label for="full">Full Time</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="part"
+                        value="Part Time"
+                        name="type"
+                      />
+                      <label for="part">Part Time</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="variable"
+                        value="Variable Shift"
+                        name="type"
+                      />
+                      <label for="variable">Variable Shift</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="temp"
+                        value="Temporary"
+                        name="type"
+                      />
+                      <label for="temp">Temporary</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="contractor"
+                        value="Contractor"
+                        name="type"
+                      />
+                      <label for="contractor">Contractor</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="intern"
+                        value="Intern"
+                        name="type"
+                      />
+                      <label for="intern">Intern</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="season"
+                        value="Seasonal"
+                        name="type"
+                      />
+                      <label for="season">Seasonal</label>
+                    </div>
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button
+                      class="cig--dropdown-result show-results-type-radio"
+                    >
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </nav>
+    </header>
+
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!-- Search Results BODY -------------->
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <section id="cig__search_results">
+      <div class="cig--search-container-max-width">
+        <div class="cig--search-main-wrapper">
+          <!-- ------------------------------- -->
+          <!-- Job Search Results (left) -------->
+          <!-- ------------------------------- -->
+          <section class="cig--search-firstchild">
+            <div class="cig--search-results-wrapper">
+              <!-- Search results - Head -->
+              <div class="cig--search-results-length-wrapper">
+                <div class="cig--search-results-length">
+                  <span>0 Jobs found</span>
+                  <a href="javascript:void(0)" class="cig--search-results-email"
+                    >Email me jobs like this</a
+                  >
+                </div>
+                <div class="cig--search-results-chips">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)" class="chip">Astronaut</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Search results - List -->
+              <ul id="cig__job_list_tabs" class="cig--search-result-list">
+                <li class="cig--card-border-edge cig--empty-results-wrapper">
+                  <div id="cig__empty_search" class="cig--empty-results">
+                    <!--  -->
+                    <!--  -->
+                    <!--  -->
+                    <h2>0 JOBS FOUND</h2>
+                    <p>
+                      Sorry, we don't currently have any jobs for this search.
+                      <br />
+                      Please try another search.
+                    </p>
+                    <div class="cig--empty-results-img"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- ------------------------------- -->
+          <!-- Job Information (right) ---------->
+          <!-- ------------------------------- -->
+          <section class="cig--search-secondchild">
+            <!-- Job Content -->
+            <div id="cig__top" class="cig--job-details-container">
+              <div class="cig--job-details-wrapper cig--card-border-edge-wide">
+                <section id="cig__empty_wrapper" class="cig--empty-results-wrapper">
+                  <div class="cig--empty-results-img-logo"></div>
+                </section>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!-- Footer ------------------------ -->
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <footer id="cig__footer">
+      <div class="cig--footer-container">
+        <ul class="cig--footer-wrapper">
+          <li class="cig--footer-firstchild">
+            <a href="javascript:void(0)">
+              <img
+                src="../assets/svg/cig-logo-white.svg"
+                alt="Careers In Government"
+              />
+            </a>
+            <h2><span>CAREERS</span> IN GOVERNMENT</h2>
+            <span>Your career search just got easier</span>
+            <ul class="cig--footer-social-links">
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  ><img src="../assets/svg/linkedin-white.svg" alt="linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  ><img src="../assets/svg/twitter-white.svg" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  ><img src="../assets/svg/facebook-white.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  ><img src="../assets/svg/instagram-white.svg" alt="instagram"
+                /></a>
+              </li>
+            </ul>
+            <div class="cig--select-dropdown-footer">
+              <select class="cig--select-styled-footer">
+                <option value="EN">English</option>
+                <option value="ES">Spanish</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <strong>gov talk</strong>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" target="_blank">COVID RESOURCES</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >EDUCATION/TRAINING</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >ELIGIBILITY/HIRING ISSUES</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >JOB DESCRIPTIONS/GLOSSARY</a
+                >
+              </li>
+              <li><a href="javascript:void(0)" target="_blank">OVERVIEW</a></li>
+              <li><a href="javascript:void(0)" target="_blank">TRENDS</a></li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >PUBLIC SECTOR NEWS</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">OUR AUTHORS</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>employer tools</strong>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" target="_blank">POST A JOB</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >REQUEST INFORMATION</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >EMPLOYER REGISTRATION</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >EMPLOYER RESOURCES</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">EMPLOYERS FAQ</a>
+              </li>
+              <li><a href="javascript:void(0)" target="_blank">TRENDS</a></li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >LEVERAGING YOUR ONLINE PRESENCE</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >HEALTH AND WELLNESS EMPOWERMENT</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>career tools</strong>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >JOB SEEKER TOOLS</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">SEARCH FOR JOBS</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">POST A RESUME</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >LOCATION SPOTLIGHT</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >COMMUNITY LISTINGS</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >QUESTIONS AND ANSWERS</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >HIRE GOVERNMENT INITIATIVE</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>career advice</strong>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >NETWORKING/INTERVIEWING</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">ON THE JOB</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >PERSONALITY ASSESSMENT</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >RESUMES/COVER LETTERS</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">INNOVATIONS</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">SOCIAL MEDIA</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <span class="cig--copyright"
+          >© 2000-2023 by Careers in Government |
+          <a href="javascript:void(0)" target="_blank">Privacy Policy</a> |
+          <a href="javascript:void(0)" target="_blank"
+            >Accessibility Statement</a
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

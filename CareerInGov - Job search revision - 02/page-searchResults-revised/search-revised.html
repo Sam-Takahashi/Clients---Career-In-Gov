@@ -1,0 +1,3655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results</title>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS/JS -->
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/searchRevised.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <script src="../js/navbar.js" defer></script>
+    <script src="../js/search.js" defer></script>
+  </head>
+  <body>
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!-- NAVBAR ------------------------ -->
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <header class="cig--sticky-navbar">
+      <!-- ------------- -->
+      <!-- PC Navigation -->
+      <!-- ------------- -->
+      <nav class="cig--navbar-pc">
+        <section class="cig--navbar-wrapper-firstchild-wrapper">
+          <div class="cig--navbar-wrapper-firstchild">
+            <!-- Logo -->
+            <a href="javascript:void(0)">
+              <img src="../assets/cig-logo.png" alt="Careers In Government" />
+            </a>
+            <div class="cig--navbar-links-wrapper">
+              <!-- Nav links -->
+              <ul>
+                <li id="dropdown__products" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__products"
+                    class="dropdown__link cig--navbar-link-plain"
+                  >
+                    PRODUCTS
+                    <svg
+                      class="dropdown__icon dropdown__icon-arrow-down"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Employer Products</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Job Seeker Products</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="dropdown__resources" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__resources"
+                    class="dropdown__link cig--navbar-link-plain"
+                    >RESOURCES
+                    <svg
+                      class="dropdown__icon dropdown__icon-arrow-down"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Job Seeker Tools</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Gov Talk</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Community</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Location Spotlight</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Hire Government Initiative</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Blog</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="dropdown__about" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__about"
+                    class="dropdown__link cig--navbar-link-plain"
+                    >ABOUT US
+                    <svg
+                      class="dropdown__icon dropdown__icon-arrow-down"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >About Us</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Contact Us</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- Rounded Buttons -->
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="cig--navbar-link-rounded cig--navbar-link-rounded-light"
+                    >Job Seeker</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="cig--navbar-link-rounded cig--navbar-link-rounded-light"
+                    >Employer</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="cig--navbar-link-rounded cig--navbar-link-rounded-dark"
+                    >Log In</a
+                  >
+                </li>
+                <!-- Social links -->
+                <li>
+                  <a href="javascript:void(0)" class="cig--navbar-social-links">
+                    <span class="cig--navbar-social-link-in"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="cig--navbar-social-links">
+                    <span class="cig--navbar-social-link-tw"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="cig--navbar-social-links">
+                    <span class="cig--navbar-social-link-fb"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="cig--navbar-wrapper-secondchild-wrapper">
+          <div class="cig--navbar-wrapper-secondchild">
+            <!-- Search filters -->
+            <ul class="cig--filter-menu">
+              <!-- Location -->
+              <li class="menu__item">
+                <a class="menu__link" href="#location">Location</a>
+                <section
+                  class="cig--dropdown submenu"
+                  id="location"
+                  tabindex="-1"
+                >
+                  <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search.."
+                    class="cig--search-filter"
+                  />
+
+                  <div
+                    id=""
+                    class="hidden-radio checkbox-container cig--dropdown-scroll-wrapper"
+                  >
+                    <!-- Start loop -->
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="ca"
+                        value="California"
+                        name="location"
+                      />
+                      <label for="ca"><span>California (7389)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="tx"
+                        value="Texas"
+                        name="location"
+                      />
+                      <label for="tx"><span>Texas (1054)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="nv"
+                        value="Nevada"
+                        name="location"
+                      />
+                      <label for="nv"><span>Nevada (398)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="ws"
+                        value="Washington"
+                        name="location"
+                      />
+                      <label for="ws"><span>Washington (228)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="az"
+                        value="Arizona"
+                        name="location"
+                      />
+                      <label for="az"><span>Arizona (209)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="fd"
+                        value="Florida"
+                        name="location"
+                      />
+                      <label for="fd"><span>Florida (170)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="cd"
+                        value="Colorado"
+                        name="location"
+                      />
+                      <label for="cd"><span>Colorado (118)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="sc"
+                        value="South Carolina"
+                        name="location"
+                      />
+                      <label for="sc"><span>South Carolina (108)</span></label>
+                    </div>
+                    <!-- End loop -->
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button
+                      class="cig--dropdown-result show-results-location-radio"
+                    >
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <!-- Categories -->
+              <li class="menu__item">
+                <a class="menu__link" href="#categories">Categories</a>
+                <section
+                  class="cig--dropdown submenu"
+                  id="categories"
+                  tabindex="-1"
+                >
+                  <input
+                    type="text"
+                    id="myInput"
+                    placeholder="Search.."
+                    class="cig--search-filter"
+                  />
+
+                  <div
+                    id=""
+                    class="checkbox-container cig--dropdown-scroll-wrapper"
+                  >
+                    <label>
+                      <input type="checkbox" value="Accounting and Finance" />
+                      <span>Accounting and Finance</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Administration and Management"
+                      />
+                      <span>Administration and Management</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Administrative Analysis and Research"
+                      />
+                      <span>Administrative Analysis and Research</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Agriculture or Farm or Ranch"
+                      />
+                      <span>Agriculture or Farm or Ranch</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Animal Control or Services"
+                      />
+                      <span>Animal Control or Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Architecture" />
+                      <span>Architecture</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Agriculture / Farm / Ranch Related"
+                      />
+                      <span>Agriculture / Farm / Ranch Related</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Aviation or Harbor" />
+                      <span>Aviation or Harbor</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Building Maintenance" />
+                      <span>Building Maintenance</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Building and Safety" />
+                      <span>Building and Safety</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Clerical and Administrative Support"
+                      />
+                      <span>Clerical and Administrative Support</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Code Enforcement and Inspections"
+                      />
+                      <span>Code Enforcement and Inspections</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Community and Economic Development"
+                      />
+                      <span>Community and Economic Development</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Community Relations or PR and Marketing"
+                      />
+                      <span>Community Relations or PR and Marketing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Construction and Skilled Trades"
+                      />
+                      <span>Construction and Skilled Trades</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="CORRECTIONS" />
+                      <span>CORRECTIONS</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Court Administration" />
+                      <span>Court Administration</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Criminology and Forensics"
+                      />
+                      <span>Criminology and Forensics</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Custodial and Janitorial" />
+                      <span>Custodial and Janitorial</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Customer Service" />
+                      <span>Customer Service</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Dispatch and Telecommunications"
+                      />
+                      <span>Dispatch and Telecommunications</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Education and Training" />
+                      <span>Education and Training</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Emergency Management" />
+                      <span>Emergency Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Engineering" />
+                      <span>Engineering</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Environmental Services" />
+                      <span>Environmental Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Facilities Management" />
+                      <span>Facilities Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fire and EMS" />
+                      <span>Fire and EMS</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fleet Management" />
+                      <span>Fleet Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Forestry" />
+                      <span>Forestry</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Fundraising or Grants Administration"
+                      />
+                      <span>Fundraising or Grants Administration</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="GIS and Surveying" />
+                      <span>GIS and Surveying</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Grounds and Landscaping Services"
+                      />
+                      <span>Grounds and Landscaping Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Historic Preservation" />
+                      <span>Historic Preservation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Housing" />
+                      <span>Housing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Human and Social Services"
+                      />
+                      <span>Human and Social Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Human Resources and Personnel"
+                      />
+                      <span>Human Resources and Personnel</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Information Technology and Communication Services"
+                      />
+                      <span
+                        >Information Technology and Communication Services</span
+                      >
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Internship" />
+                      <span>Internship</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Legal Services" />
+                      <span>Legal Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Library Services" />
+                      <span>Library Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Marketing and Public Relations"
+                      />
+                      <span>Marketing and Public Relations</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Municipal or County Clerk"
+                      />
+                      <span>Municipal or County Clerk</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Museum and Arts" />
+                      <span>Museum and Arts</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Natural Resources" />
+                      <span>Natural Resources</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="non-profit management" />
+                      <span>Non-profit Management</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Nutrition and Food Services"
+                      />
+                      <span>Nutrition and Food Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Parks and Recreation" />
+                      <span>Parks and Recreation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Planning and Development" />
+                      <span>Planning and Development</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Political or Public Affairs"
+                      />
+                      <span>Political or Public Affairs</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Probation" />
+                      <span>Probation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Project Management" />
+                      <span>Project Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Health" />
+                      <span>Public Health</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Public Information and Intergovernmental Affairs"
+                      />
+                      <span
+                        >Public Information and Intergovernmental Affairs</span
+                      >
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Safety" />
+                      <span>Public Safety</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Works" />
+                      <span>Public Works</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Purchasing and Warehouse" />
+                      <span>Purchasing and Warehouse</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Real Estate" />
+                      <span>Real Estate</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Records Management" />
+                      <span>Records Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Redevelopment" />
+                      <span>Redevelopment</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Regulatory and Licensing" />
+                      <span>Regulatory and Licensing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Risk Management and Insurance Claims"
+                      />
+                      <span>Risk Management and Insurance Claims</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Sales" />
+                      <span>Sales</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Sanitation and Solid Waste"
+                      />
+                      <span>Sanitation and Solid Waste</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Sciences and Laboratory" />
+                      <span>Sciences and Laboratory</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Tourism and Convention Services"
+                      />
+                      <span>Tourism and Convention Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Transportation or Transit"
+                      />
+                      <span>Transportation or Transit</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Utilities" />
+                      <span>Utilities</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Veteran Services" />
+                      <span>Veteran Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Water and Wastewater Treatment"
+                      />
+                      <span>Water and Wastewater Treatment</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Other" />
+                      <span>Other</span>
+                    </label>
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button class="cig--dropdown-result show-results-button">
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <!-- Job Type -->
+              <li class="menu__item">
+                <a class="menu__link" href="#job_type">Job Type</a>
+                <section
+                  class="cig--dropdown submenu"
+                  id="job_type"
+                  tabindex="-1"
+                >
+                  <div class="hidden-radio cig--dropdown-wrapper">
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="any"
+                        value="Any Job Type"
+                        name="type"
+                      />
+                      <label for="any">Any Job Type</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="full"
+                        value="Full Time"
+                        name="type"
+                      />
+                      <label for="full">Full Time</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="part"
+                        value="Part Time"
+                        name="type"
+                      />
+                      <label for="part">Part Time</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="variable"
+                        value="Variable Shift"
+                        name="type"
+                      />
+                      <label for="variable">Variable Shift</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="temp"
+                        value="Temporary"
+                        name="type"
+                      />
+                      <label for="temp">Temporary</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="contractor"
+                        value="Contractor"
+                        name="type"
+                      />
+                      <label for="contractor">Contractor</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="intern"
+                        value="Intern"
+                        name="type"
+                      />
+                      <label for="intern">Intern</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="season"
+                        value="Seasonal"
+                        name="type"
+                      />
+                      <label for="season">Seasonal</label>
+                    </div>
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button
+                      class="cig--dropdown-result show-results-type-radio"
+                    >
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <!-- Search bar -->
+              <li>
+                <form action="" class="cig--navbar-search-form">
+                  <input type="text" placeholder="Keywords" />
+                  <button class="cig--navbar-search-btn"><span></span></button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </nav>
+      <!-- ----------------- -->
+      <!-- MOBILE Navigation -->
+      <!-- ----------------- -->
+      <nav class="cig--navbar-mobile">
+        <section class="mobile-menu-firstchild">
+          <!-- Logo -->
+          <a href="javascript:void(0)">
+            <img
+              src="../assets/cig-logo.png"
+              alt="Careers In Government"
+              class="cig--logo-mobile"
+            />
+          </a>
+          <!-- Search bar -->
+          <form action="" class="cig--navbar-search-form">
+            <input type="text" placeholder="Keywords" />
+            <button class="cig--navbar-search-btn"><span></span></button>
+          </form>
+          <!-- Dropdown Trigger -->
+          <div class="menu-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <!-- Dropdown Menu -->
+          <div class="header__nav">
+            <nav class="mobile-nav">
+              <ul class="nav__list">
+                <li id="dropdown__products-mobile" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__products-mobile"
+                    class="dropdown__link bob cig--navbar-link-plain"
+                    >PRODUCTS
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Employer Products</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Job Seeker Products</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="dropdown__resources-mobile" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__resources-mobile"
+                    class="dropdown__link cig--navbar-link-plain"
+                    >RESOURCES
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Job Seeker Tools</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Gov Talk</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Community</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Location Spotlight</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Hire Government Initiative</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Blog</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li id="dropdown__about-mobile" class="cig--dropdown">
+                  <!-- Dropdown Trigger -->
+                  <a
+                    href="javascript:void(0)"
+                    id="toggle__about-mobile"
+                    class="dropdown__link cig--navbar-link-plain"
+                    >About Us
+                  </a>
+                  <!-- Dropdown Menu -->
+                  <div class="dropdown__menu">
+                    <div class="dropdown__content">
+                      <ul class="dropdown__nav">
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >About Us</a
+                          >
+                        </li>
+                        <li class="dropdown__item">
+                          <a class="dropdown__link" href="javascript:void(0)"
+                            >Contact Us</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- Social links -->
+              <div class="mobile-social-links-wrapper">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-social-links"
+                    >
+                      <span class="cig--navbar-social-link-in"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-social-links"
+                    >
+                      <span class="cig--navbar-social-link-tw"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-social-links"
+                    >
+                      <span class="cig--navbar-social-link-fb"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Rounded Buttons -->
+              <div class="mobile-rounded-button-wrapper">
+                <ul>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-link-rounded cig--navbar-link-rounded-light"
+                      >Job Seeker</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-link-rounded cig--navbar-link-rounded-light"
+                      >Employer</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="javascript:void(0)"
+                      class="cig--navbar-link-rounded cig--navbar-link-rounded-dark"
+                      >Log In</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </section>
+        <section class="mobile-menu-secondchild">
+          <div class="cig--navbar-wrapper-secondchild">
+            <!-- Mobile Search Filters -->
+            <ul class="cig--filter-menu">
+              <!-- Location -->
+              <li class="menu__item">
+                <a class="menu__link" href="#location_mobile">Location</a>
+                <section class="submenu" id="location_mobile" tabindex="-1">
+                  <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search.."
+                    class="cig--search-filter"
+                  />
+
+                  <div
+                    class="hidden-radio checkbox-container cig--dropdown-scroll-wrapper"
+                  >
+                    <!-- Start loop -->
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="ca"
+                        value="California"
+                        name="location"
+                      />
+                      <label for="ca"><span>California (7389)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="tx"
+                        value="Texas"
+                        name="location"
+                      />
+                      <label for="tx"><span>Texas (1054)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="nv"
+                        value="Nevada"
+                        name="location"
+                      />
+                      <label for="nv"><span>Nevada (398)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="ws"
+                        value="Washington"
+                        name="location"
+                      />
+                      <label for="ws"><span>Washington (228)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="az"
+                        value="Arizona"
+                        name="location"
+                      />
+                      <label for="az"><span>Arizona (209)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="fd"
+                        value="Florida"
+                        name="location"
+                      />
+                      <label for="fd"><span>Florida (170)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="cd"
+                        value="Colorado"
+                        name="location"
+                      />
+                      <label for="cd"><span>Colorado (118)</span></label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="sc"
+                        value="South Carolina"
+                        name="location"
+                      />
+                      <label for="sc"><span>South Carolina (108)</span></label>
+                    </div>
+                    <!-- End loop -->
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button
+                      class="cig--dropdown-result show-results-location-radio"
+                    >
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <!-- Categories -->
+              <li class="menu__item">
+                <a class="menu__link" href="#categories_mobile">Categories</a>
+                <section class="submenu" id="categories_mobile" tabindex="-1">
+                  <input
+                    type="text"
+                    id="myInput"
+                    placeholder="Search.."
+                    class="cig--search-filter"
+                  />
+
+                  <div
+                    id=""
+                    class="checkbox-container cig--dropdown-scroll-wrapper"
+                  >
+                    <label>
+                      <input type="checkbox" value="Accounting and Finance" />
+                      <span>Accounting and Finance</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Administration and Management"
+                      />
+                      <span>Administration and Management</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Administrative Analysis and Research"
+                      />
+                      <span>Administrative Analysis and Research</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Agriculture or Farm or Ranch"
+                      />
+                      <span>Agriculture or Farm or Ranch</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Animal Control or Services"
+                      />
+                      <span>Animal Control or Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Architecture" />
+                      <span>Architecture</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Agriculture / Farm / Ranch Related"
+                      />
+                      <span>Agriculture / Farm / Ranch Related</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Aviation or Harbor" />
+                      <span>Aviation or Harbor</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Building Maintenance" />
+                      <span>Building Maintenance</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Building and Safety" />
+                      <span>Building and Safety</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Clerical and Administrative Support"
+                      />
+                      <span>Clerical and Administrative Support</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Code Enforcement and Inspections"
+                      />
+                      <span>Code Enforcement and Inspections</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Community and Economic Development"
+                      />
+                      <span>Community and Economic Development</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Community Relations or PR and Marketing"
+                      />
+                      <span>Community Relations or PR and Marketing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Construction and Skilled Trades"
+                      />
+                      <span>Construction and Skilled Trades</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="CORRECTIONS" />
+                      <span>CORRECTIONS</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Court Administration" />
+                      <span>Court Administration</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Criminology and Forensics"
+                      />
+                      <span>Criminology and Forensics</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Custodial and Janitorial" />
+                      <span>Custodial and Janitorial</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Customer Service" />
+                      <span>Customer Service</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Dispatch and Telecommunications"
+                      />
+                      <span>Dispatch and Telecommunications</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Education and Training" />
+                      <span>Education and Training</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Emergency Management" />
+                      <span>Emergency Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Engineering" />
+                      <span>Engineering</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Environmental Services" />
+                      <span>Environmental Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Facilities Management" />
+                      <span>Facilities Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fire and EMS" />
+                      <span>Fire and EMS</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Fleet Management" />
+                      <span>Fleet Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Forestry" />
+                      <span>Forestry</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Fundraising or Grants Administration"
+                      />
+                      <span>Fundraising or Grants Administration</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="GIS and Surveying" />
+                      <span>GIS and Surveying</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Grounds and Landscaping Services"
+                      />
+                      <span>Grounds and Landscaping Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Historic Preservation" />
+                      <span>Historic Preservation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Housing" />
+                      <span>Housing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Human and Social Services"
+                      />
+                      <span>Human and Social Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Human Resources and Personnel"
+                      />
+                      <span>Human Resources and Personnel</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Information Technology and Communication Services"
+                      />
+                      <span
+                        >Information Technology and Communication Services</span
+                      >
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Internship" />
+                      <span>Internship</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Legal Services" />
+                      <span>Legal Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Library Services" />
+                      <span>Library Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Marketing and Public Relations"
+                      />
+                      <span>Marketing and Public Relations</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Municipal or County Clerk"
+                      />
+                      <span>Municipal or County Clerk</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Museum and Arts" />
+                      <span>Museum and Arts</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Natural Resources" />
+                      <span>Natural Resources</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="non-profit management" />
+                      <span>Non-profit Management</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Nutrition and Food Services"
+                      />
+                      <span>Nutrition and Food Services</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Parks and Recreation" />
+                      <span>Parks and Recreation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Planning and Development" />
+                      <span>Planning and Development</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Political or Public Affairs"
+                      />
+                      <span>Political or Public Affairs</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Probation" />
+                      <span>Probation</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Project Management" />
+                      <span>Project Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Health" />
+                      <span>Public Health</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Public Information and Intergovernmental Affairs"
+                      />
+                      <span
+                        >Public Information and Intergovernmental Affairs</span
+                      >
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Safety" />
+                      <span>Public Safety</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Public Works" />
+                      <span>Public Works</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Purchasing and Warehouse" />
+                      <span>Purchasing and Warehouse</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Real Estate" />
+                      <span>Real Estate</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Records Management" />
+                      <span>Records Management</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Redevelopment" />
+                      <span>Redevelopment</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Regulatory and Licensing" />
+                      <span>Regulatory and Licensing</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Risk Management and Insurance Claims"
+                      />
+                      <span>Risk Management and Insurance Claims</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Sales" />
+                      <span>Sales</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Sanitation and Solid Waste"
+                      />
+                      <span>Sanitation and Solid Waste</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Sciences and Laboratory" />
+                      <span>Sciences and Laboratory</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Tourism and Convention Services"
+                      />
+                      <span>Tourism and Convention Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Transportation or Transit"
+                      />
+                      <span>Transportation or Transit</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Utilities" />
+                      <span>Utilities</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Veteran Services" />
+                      <span>Veteran Services</span>
+                    </label>
+
+                    <label>
+                      <input
+                        type="checkbox"
+                        value="Water and Wastewater Treatment"
+                      />
+                      <span>Water and Wastewater Treatment</span>
+                    </label>
+
+                    <label>
+                      <input type="checkbox" value="Other" />
+                      <span>Other</span>
+                    </label>
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button class="cig--dropdown-result show-results-button">
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+              <!-- Job Type -->
+              <li class="menu__item">
+                <a class="menu__link" href="#job_type_mobile">Job Type</a>
+                <section class="submenu" id="job_type_mobile" tabindex="-1">
+                  <div class="hidden-radio cig--dropdown-wrapper">
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="any"
+                        value="Any Job Type"
+                        name="type"
+                      />
+                      <label for="any">Any Job Type</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="full"
+                        value="Full Time"
+                        name="type"
+                      />
+                      <label for="full">Full Time</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="part"
+                        value="Part Time"
+                        name="type"
+                      />
+                      <label for="part">Part Time</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="variable"
+                        value="Variable Shift"
+                        name="type"
+                      />
+                      <label for="variable">Variable Shift</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="temp"
+                        value="Temporary"
+                        name="type"
+                      />
+                      <label for="temp">Temporary</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="contractor"
+                        value="Contractor"
+                        name="type"
+                      />
+                      <label for="contractor">Contractor</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="intern"
+                        value="Intern"
+                        name="type"
+                      />
+                      <label for="intern">Intern</label>
+                    </div>
+                    <div class="radio--list">
+                      <input
+                        type="radio"
+                        id="season"
+                        value="Seasonal"
+                        name="type"
+                      />
+                      <label for="season">Seasonal</label>
+                    </div>
+                  </div>
+
+                  <div class="cig--dropmenu-cta">
+                    <button class="cig--cancel">Cancel</button>
+                    <button
+                      class="cig--dropdown-result show-results-type-radio"
+                    >
+                      Show results
+                    </button>
+                  </div>
+                </section>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </nav>
+    </header>
+
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!-- Search Results BODY -------------->
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <section id="cig__search_results">
+      <div class="cig--search-container-max-width">
+        <div class="cig--search-main-wrapper">
+          <!-- ------------------------------- -->
+          <!-- Job Search Results (left) -------->
+          <!-- ------------------------------- -->
+          <section class="cig--search-firstchild">
+            <div class="cig--search-results-wrapper">
+              <!-- Search results - Head -->
+              <div class="cig--search-results-length-wrapper">
+                <div class="cig--search-results-length">
+                  <span>2,148 Jobs found</span>
+                  <a href="javascript:void(0)" class="cig--search-results-email"
+                    >Email me jobs like this</a
+                  >
+                </div>
+                <div class="cig--search-results-chips">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0)" class="chip">Engineering</a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="chip">Other</a></li>
+                    <li>
+                      <a href="javascript:void(0)" class="chip"
+                        >Administration and Management</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="chip"
+                        >Human Resources and Personnel</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Search results - List -->
+              <ul id="cig__job_list_tabs" class="cig--search-result-list">
+                <li
+                  class="cig--search-result-wrapper cig--card-border-edge highlighted"
+                >
+                  <div class="cig--search-result-list-heading">
+                    <img src="../assets/city-austin-logo.png" alt="" />
+                    <a href="javascript:void(0)">
+                      <h2>Temporary - Project Coordinator</h2>
+                    </a>
+                  </div>
+                  <div class="cig--search-result-list-content">
+                    <div class="cig--search-result-save-cta">
+                      <a href="javascript:void(0)" data-save="1">Save</a>
+                    </div>
+                    <div class="cig--search-result-info">
+                      <p class="cig--search-result-desc">
+                        The Development Services Department ( DSD ) assists
+                        homeowners, business owners, and contractors when they
+                        build, demolish, remodel or perform any type of
+                        construction to ensure compliance with applicable city
+                        and building codes.
+                      </p>
+                      <!-- SWITCH START -->
+                      <section class="cig--switcher">
+                        <!-- State: Excerpt -->
+                        <div class="switcher--excerpt RTETextWrapper">
+                          <ul class="cig--switch-pill-wrapper">
+                            <li>
+                              <span>Full Time</span>
+                            </li>
+                            <li>
+                              <span>Other</span>
+                            </li>
+                            <li>
+                              <span>Project Management</span>
+                            </li>
+                          </ul>
+                          <div class="cig--pill-cta-wrapper">
+                            <span class="pill--total">Total: </span>
+                            <a
+                              href="javascript:void(0)"
+                              class="switcher-btn showMore"
+                              >Expand</a
+                            >
+                          </div>
+                        </div>
+                        <!-- State: Full Content -->
+                        <div class="switch--content RTETextWrapper">
+                          <ul class="cig--switch-pill-wrapper">
+                            <li>
+                              <span>Full Time</span>
+                            </li>
+                            <li>
+                              <span>Other</span>
+                            </li>
+                            <li>
+                              <span>Project Management</span>
+                            </li>
+                          </ul>
+                          <div class="cig--pill-cta-wrapper">
+                            <a
+                              href="javascript:void(0)"
+                              class="switcher-btn showLess"
+                              >Collapse</a
+                            >
+                          </div>
+                        </div>
+                      </section>
+                      <!-- SWITCH END -->
+                    </div>
+                  </div>
+                </li>
+                <li class="cig--search-result-wrapper cig--card-border-edge">
+                  <div class="cig--search-result-list-heading">
+                    <img src="../assets/company-logo-01.png" alt="" />
+                    <a href="javascript:void(0)">
+                      <h2>Senior Office Assistant</h2>
+                    </a>
+                  </div>
+                  <div class="cig--search-result-list-content">
+                    <div class="cig--search-result-save-cta">
+                      <a href="javascript:void(0)" data-save="2">Save</a>
+                    </div>
+                    <div class="cig--search-result-info">
+                      <p class="cig--search-result-desc">
+                        South Coast Air Quality Management District (South Coast
+                        AQMD) is one of the largest and most technologically
+                        sophisticated environmental regulatory agencies in the
+                        Nation. We serve a four-county region that includes
+                        large areas of Los Angeles, Orange County, Riverside and
+                        San Bernardino counties, including the Coachella Valley,
+                        which is home to more than 17 million people.
+                      </p>
+                      <!-- SWITCH START -->
+                      <section class="cig--switcher">
+                        <!-- State: Excerpt -->
+                        <div class="switcher--excerpt RTETextWrapper">
+                          <ul class="cig--switch-pill-wrapper">
+                            <li>
+                              <span>Full Time</span>
+                            </li>
+                            <li>
+                              <span>Clerical and Administrative Support</span>
+                            </li>
+                            <li>
+                              <span>Human Resources and Personnel</span>
+                            </li>
+                          </ul>
+                          <div class="cig--pill-cta-wrapper">
+                            <span class="pill--total">Total: </span>
+                            <a
+                              href="javascript:void(0)"
+                              class="switcher-btn showMore"
+                              >Expand</a
+                            >
+                          </div>
+                        </div>
+                        <!-- State: Full Content -->
+                        <div class="switch--content RTETextWrapper">
+                          <ul class="cig--switch-pill-wrapper">
+                            <li>
+                              <span>Full Time</span>
+                            </li>
+                            <li>
+                              <span>Clerical and Administrative Support</span>
+                            </li>
+                            <li>
+                              <span>Human Resources and Personnel</span>
+                            </li>
+                          </ul>
+                          <div class="cig--pill-cta-wrapper">
+                            <a
+                              href="javascript:void(0)"
+                              class="switcher-btn showLess"
+                              >Collapse</a
+                            >
+                          </div>
+                        </div>
+                      </section>
+                      <!-- SWITCH END -->
+                    </div>
+                  </div>
+                </li>
+                <li class="cig--search-result-wrapper cig--card-border-edge">
+                  <div class="cig--search-result-list-heading">
+                    <img src="../assets/company-logo-02.png" alt="" />
+                    <a href="javascript:void(0)">
+                      <h2>Senior Financial Aid Specialist</h2>
+                    </a>
+                  </div>
+                  <div class="cig--search-result-list-content">
+                    <div class="cig--search-result-save-cta">
+                      <a href="javascript:void(0)" data-save="3">Save</a>
+                    </div>
+                    <div class="cig--search-result-info">
+                      <p class="cig--search-result-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sit, nihil? Modi, unde eligendi voluptates impedit
+                        architecto nostrum temporibus itaque officia aperiam
+                        voluptate. Accusamus accusantium facilis placeat
+                        consequatur, tenetur voluptas reprehenderit at sint
+                        maxime aperiam ullam, sunt consectetur cupiditate quo et
+                        itaque rem incidunt! Aspernatur exercitationem
+                        necessitatibus illo vitae quod rem.
+                      </p>
+                      <!-- SWITCH START -->
+                      <section class="cig--switcher">
+                        <!-- State: Excerpt -->
+                        <div class="switcher--excerpt RTETextWrapper">
+                          <ul class="cig--switch-pill-wrapper">
+                            <li>
+                              <span>Full Time</span>
+                            </li>
+                            <li>
+                              <span>Other</span>
+                            </li>
+                            <li>
+                              <span>Administration and Management</span>
+                            </li>
+                            <li>
+                              <span>Financial Analyst</span>
+                            </li>
+                            <li>
+                              <span>Instructional Coordinator</span>
+                            </li>
+                          </ul>
+                          <div class="cig--pill-cta-wrapper">
+                            <span class="pill--total">Total: </span>
+                            <a
+                              href="javascript:void(0)"
+                              class="switcher-btn showMore"
+                              >Expand</a
+                            >
+                          </div>
+                        </div>
+                        <!-- State: Full Content -->
+                        <div class="switch--content RTETextWrapper">
+                          <ul class="cig--switch-pill-wrapper">
+                            <li>
+                              <span>Full Time</span>
+                            </li>
+                            <li>
+                              <span>Other</span>
+                            </li>
+                            <li>
+                              <span>Administration and Management</span>
+                            </li>
+                            <li>
+                              <span>Financial Analyst</span>
+                            </li>
+                            <li>
+                              <span>Instructional Coordinator</span>
+                            </li>
+                          </ul>
+                          <div class="cig--pill-cta-wrapper">
+                            <a
+                              href="javascript:void(0)"
+                              class="switcher-btn showLess"
+                              >Collapse</a
+                            >
+                          </div>
+                        </div>
+                      </section>
+                      <!-- SWITCH END -->
+                    </div>
+                  </div>
+                </li>
+                <li class="cig--search-result-wrapper cig--card-border-edge">
+                  <div class="cig--search-result-list-heading">
+                    <img src="../assets/feat-logo-03.png" alt="" />
+                    <a href="javascript:void(0)">
+                      <h2>Information Technology Specialist</h2>
+                    </a>
+                  </div>
+                  <div class="cig--search-result-list-content">
+                    <div class="cig--search-result-save-cta">
+                      <a href="javascript:void(0)" data-save="4">Save</a>
+                    </div>
+                    <div class="cig--search-result-info">
+                      <p class="cig--search-result-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sit, nihil? Modi, unde eligendi voluptates impedit
+                        architecto nostrum temporibus itaque officia aperiam
+                        voluptate. Accusamus accusantium facilis placeat
+                        consequatur, tenetur voluptas reprehenderit at sint
+                        maxime aperiam ullam, sunt consectetur cupiditate quo et
+                        itaque rem incidunt! Aspernatur exercitationem
+                        necessitatibus illo vitae quod rem.
+                      </p>
+                      <!-- SWITCH START -->
+                      <section class="cig--switcher">
+                        <!-- State: Excerpt -->
+                        <div class="switcher--excerpt RTETextWrapper">
+                          <ul class="cig--switch-pill-wrapper">
+                            <li>
+                              <span>Full Time</span>
+                            </li>
+                            <li>
+                              <span>Editor</span>
+                            </li>
+                            <li>
+                              <span
+                                >Reporter, Correspondent, and Broadcast News
+                                Analyst</span
+                              >
+                            </li>
+                            <li>
+                              <span>Graphic Designer</span>
+                            </li>
+                            <li>
+                              <span>Instructional Coordinator</span>
+                            </li>
+                          </ul>
+                          <div class="cig--pill-cta-wrapper">
+                            <span class="pill--total">Total: </span>
+                            <a
+                              href="javascript:void(0)"
+                              class="switcher-btn showMore"
+                              >Expand</a
+                            >
+                          </div>
+                        </div>
+                        <!-- State: Full Content -->
+                        <div class="switch--content RTETextWrapper">
+                          <ul class="cig--switch-pill-wrapper">
+                            <li>
+                              <span>Full Time</span>
+                            </li>
+                            <li>
+                              <span>Editor</span>
+                            </li>
+                            <li>
+                              <span
+                                >Reporter, Correspondent, and Broadcast News
+                                Analyst</span
+                              >
+                            </li>
+                            <li>
+                              <span>Graphic Designer</span>
+                            </li>
+                            <li>
+                              <span>Instructional Coordinator</span>
+                            </li>
+                          </ul>
+                          <div class="cig--pill-cta-wrapper">
+                            <a
+                              href="javascript:void(0)"
+                              class="switcher-btn showLess"
+                              >Collapse</a
+                            >
+                          </div>
+                        </div>
+                      </section>
+                      <!-- SWITCH END -->
+                    </div>
+                  </div>
+                </li>
+                <li class="cig--search-result-wrapper cig--card-border-edge">
+                  <div class="cig--search-result-list-heading">
+                    <img src="../assets/company-logo-03.png" alt="" />
+                    <a href="javascript:void(0)">
+                      <h2>
+                        Behavioral Health Therapist I - $1,000 - $5,000 NEW HIRE
+                        BONUS
+                      </h2>
+                    </a>
+                  </div>
+                  <div class="cig--search-result-list-content">
+                    <div class="cig--search-result-save-cta">
+                      <a href="javascript:void(0)" data-save="5">Save</a>
+                    </div>
+                    <div class="cig--search-result-info">
+                      <p class="cig--search-result-desc">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Nemo adipisci asperiores, sapiente odit, dolor
+                        nisi ipsam explicabo optio autem eius dignissimos
+                        impedit dolorum.
+                      </p>
+                      <!-- SWITCH START -->
+                      <section class="cig--switcher">
+                        <!-- State: Excerpt -->
+                        <div class="switcher--excerpt RTETextWrapper">
+                          <ul class="cig--switch-pill-wrapper">
+                            <li>
+                              <span>Full Time</span>
+                            </li>
+                            <li>
+                              <span>Public Health</span>
+                            </li>
+                            <li>
+                              <span>Physical Therapist</span>
+                            </li>
+                            <li>
+                              <span>Physicians and Surgeons</span>
+                            </li>
+                            <li>
+                              <span>Epidemiologist</span>
+                            </li>
+                          </ul>
+                          <div class="cig--pill-cta-wrapper">
+                            <span class="pill--total">Total: </span>
+                            <a
+                              href="javascript:void(0)"
+                              class="switcher-btn showMore"
+                              >Expand</a
+                            >
+                          </div>
+                        </div>
+                        <!-- State: Full Content -->
+                        <div class="switch--content RTETextWrapper">
+                          <ul class="cig--switch-pill-wrapper">
+                            <li>
+                              <span>Full Time</span>
+                            </li>
+                            <li>
+                              <span>Public Health</span>
+                            </li>
+                            <li>
+                              <span>Physical Therapist</span>
+                            </li>
+                            <li>
+                              <span>Physicians and Surgeons</span>
+                            </li>
+                            <li>
+                              <span>Epidemiologist</span>
+                            </li>
+                          </ul>
+                          <div class="cig--pill-cta-wrapper">
+                            <a
+                              href="javascript:void(0)"
+                              class="switcher-btn showLess"
+                              >Collapse</a
+                            >
+                          </div>
+                        </div>
+                      </section>
+                      <!-- SWITCH END -->
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="cig--loadmore-cta-wrapper">
+              <a href="javascript:void(0)">Load More</a>
+            </div>
+          </section>
+
+          <!-- ------------------------------- -->
+          <!-- Job Information (right) ---------->
+          <!-- ------------------------------- -->
+          <section class="cig--search-secondchild">
+            <!-- Job Content -->
+            <div id="cig__top" class="cig--job-details-container">
+              <!-- Mobile return btn -->
+              <div id="cig__job_return" class="cig--mobile-return-wrapper">
+                <button></button>
+              </div>
+
+              <div class="cig--job-details-wrapper cig--card-border-edge-wide">
+                <ul id="cig__job_tab">
+                  <li class="job__desc">
+                    <div class="cig-job-heading-details-container">
+                      <div class="cig--detail-heading-wrapper">
+                        <h2>Temporary - Project Coordinator</h2>
+                        <div
+                          class="cig--search-result-save-cta cig--search-result-save-cta-pc"
+                        >
+                          <a
+                            href="javascript:void(0)"
+                            class="cig--search-job-save-cta"
+                            data-save="1"
+                            >Save</a
+                          >
+                        </div>
+                      </div>
+                      <div class="cig--detail-profile-wrapper">
+                        <div class="cig--detail-profile-firstchild">
+                          <div class="cig--employer-detail-list">
+                            <span>Full Time</span>
+                            <span>$30.14 - $37.68</span>
+                            <span>Jul 22, 2023</span>
+                          </div>
+                        </div>
+                        <div class="cig--detail-profile-secondchild">
+                          <div class="cig--employer-head-wrapper">
+                            <img src="../assets/city-austin-logo.png" alt="" />
+                            <span class="cig--employer-name">
+                              <strong>Employer:</strong>
+                              <h3>City of Austin, TX</h3>
+                            </span>
+                          </div>
+                          <p>
+                            This vibrant and dynamic city tops many lists for
+                            business, entertainment, and quality of life.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cig--employer-cta-wrapper">
+                        <div
+                          class="cig--search-result-save-cta cig--search-result-save-cta-mobile"
+                        >
+                          <a
+                            href="javascript:void(0)"
+                            class="cig--search-job-save-cta"
+                            data-save="1"
+                            >Save</a
+                          >
+                        </div>
+                        <a
+                          href="javascript:void(0)"
+                          target="_blank"
+                          class="cig--employer-profile-cta"
+                          >Employer Profile</a
+                        >
+                      </div>
+                    </div>
+                    <!-- ----------------------- -->
+                    <!-- --- Job Description --- -->
+                    <!-- ----------------------- -->
+                    <section class="cig--detail-description">
+                      <h3>Job Description</h3>
+                      <strong>Minimum Qualifications</strong>
+                      <ul>
+                        <li>
+                          Graduation with a Bachelor's degree from an accredited
+                          college or university with major course work in a
+                          related field, plus three (3) years of experience in
+                          construction, engineering, architecture, or related
+                          work.
+                        </li>
+                        <li>
+                          Experience may substitute for education up to a
+                          maximum of four (4) years.
+                        </li>
+                      </ul>
+                      <strong>Licenses and Certifications Required:</strong>
+                      <ul>
+                        <li>May require a valid Texas driver license.</li>
+                      </ul>
+
+                      <strong>Notes to Applicants</strong>
+                      <p>
+                        The
+                        <strong>Development Services Department ( DSD ) </strong
+                        >assists homeowners, business owners, and contractors
+                        when they build, demolish, remodel or perform any type
+                        of construction to ensure compliance with applicable
+                        city and building codes.
+                      </p>
+                      <p>
+                        Development Services Department ( DSD ) is seeking a
+                        Project Coordinator for the Public Project Review Team.
+                        This position will collaborate with various
+                        stakeholders, including architects, engineers,
+                        contractors, and government officials, to streamline
+                        processes and facilitate effective communication
+                        throughout the project life cycle. This position will
+                        play a crucial role in tracking project milestones,
+                        preparing progress reports, and identifying and
+                        resolving potential issues or bottlenecks that may
+                        arise.
+                      </p>
+                      <p>
+                        This position is part of the Public Project Review Team
+                        which is compiled of team members each representing
+                        different review disciplines. The team of reviewers will
+                        perform their discipline's review in a meeting setting
+                        with the entire review team, the applicant and design
+                        professionals. The goal is to facilitate reduced plan
+                        review turnaround times and to expedite the issuance of
+                        permits by making decisions in a collaborative, faster
+                        and thorough manner.
+                      </p>
+
+                      <p>
+                        Working with the City of Austin provides a number of
+                        health and welfare benefits. Please click
+                        <a href="javascript:void(0)">HERE</a> for more
+                        information.
+                      </p>
+                      <p>
+                        <strong>Employment Application:</strong> Only complete
+                        applications will be considered. Be sure your employment
+                        history on the application includes your past job
+                        titles, employment dates, and a detailed summary of your
+                        job duties, functions and responsibilities. Please take
+                        the time to ensure that the application is complete to
+                        represent your history and skills/abilities. Although
+                        there are posting dates listed, Development Services may
+                        close the posting any time after seven days from the
+                        initial advertisement. Once a position is closed, no
+                        additional applications or application changes will be
+                        accepted.
+                      </p>
+
+                      <strong>Duties, Functions and Responsibilities</strong>
+                      <p>
+                        Essential duties and functions, pursuant to the
+                        Americans with Disabilities Act, may include the
+                        following. Other related duties may be assigned.
+                      </p>
+                      <p>
+                        Communicates project and/or program information to
+                        internal and external customers. Assists in the
+                        development and monitoring of project and/or program
+                        budgets by completing assignments that may include
+                        processing a pay application or monitoring and updating
+                        the assigned project budget. Assists in the development
+                        of short- and long-range plans on projects or works on
+                        routine projects whereby techniques used are well known
+                        and present no unusual engineering problems. Assists in
+                        the development and implementation of operating policies
+                        and procedures by providing input as a team member of an
+                        established process improvement team. Ensures compliance
+                        with City and other regulatory agency requirements and
+                        policies by verifying that regulatory/permitting
+                        processes have been identified and permits or approvals
+                        acquired for assigned project. Coordinates
+                        development/reviews construction or engineering related
+                        contracts, contract documents, and Developer Agreements
+                        by reviewing preparing and processing project change
+                        orders to projects if change orders are appropriate and
+                        in compliance or applying technical quality control
+                        review. Coordinates and evaluates plans, criteria,
+                        schedules, etc. for a variety of projects, Programs, and
+                        plans or a division and/or section activities. Assists
+                        in the resolution of conflicts and difficult situations
+                        by providing supporting documentation, policies and
+                        procedures. Develops, maintains, and improves City of
+                        Austin design and construction standards. Provides
+                        technical advice and assistance.
+                      </p>
+                    </section>
+
+                    <!-- ------------------------- -->
+                    <!-- --- Job Apply(Sticky) --- -->
+                    <!-- ------------------------- -->
+                    <section class="cig--job-application-sticky-wrapper">
+                      <!-- Scroll Top Button -->
+                      <button class="hide-scroll cig__scroll_top"></button>
+                      <div class="cig--application-cta-wrapper">
+                        <a href="javascript:void(0)" class="cig--apply-cta"
+                          >Apply now</a
+                        >
+                        <div class="cig--share-links-wrapper">
+                          <span>Share this job:</span>
+                          <div class="cig--social-share-link-wrapper">
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-fb"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-tw"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-gp"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-in"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-pi"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-ev"></span
+                              ></a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="cig--application-referral">
+                      <p>
+                        Please mention you found this employment opportunity on
+                        the
+                        <a href="javascript:void(0)" target="_blank"
+                          >CareersInGovernment.com</a
+                        >
+                        job board.
+                      </p>
+                    </section>
+                  </li>
+                  <li class="job__desc">
+                    <div class="cig-job-heading-details-container">
+                      <div class="cig--detail-heading-wrapper">
+                        <h2>Senior Office Assistant</h2>
+                        <div
+                          class="cig--search-result-save-cta cig--search-result-save-cta-pc"
+                        >
+                          <a
+                            href="javascript:void(0)"
+                            class="cig--search-job-save-cta"
+                            data-save="2"
+                            >Save</a
+                          >
+                        </div>
+                      </div>
+                      <div class="cig--detail-profile-wrapper">
+                        <div class="cig--detail-profile-firstchild">
+                          <div class="cig--employer-detail-list">
+                            <span>Diamond Bar, California</span>
+                            <span>SOUTH COAST AQMD</span>
+                            <span>Full Time</span>
+                            <span>42,989 USD</span>
+                            <span>Jun 08, 2023</span>
+                          </div>
+                        </div>
+                        <div class="cig--detail-profile-secondchild">
+                          <div class="cig--employer-head-wrapper">
+                            <img src="../assets/company-logo-01.png" alt="" />
+                            <span class="cig--employer-name">
+                              <strong>Employer:</strong>
+                              <h3>SOUTH COAST AQMD</h3>
+                            </span>
+                          </div>
+                          <p class="cig--employer-desc-excerpt">
+                            South Coast Air Quality Management District (South
+                            Coast AQMD) is one of the largest and most
+                            technologically sophisticated environmental
+                            regulatory agencies in the nation.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cig--employer-cta-wrapper">
+                        <div
+                          class="cig--search-result-save-cta cig--search-result-save-cta-mobile"
+                        >
+                          <a
+                            href="javascript:void(0)"
+                            class="cig--search-job-save-cta"
+                            data-save="2"
+                            >Save</a
+                          >
+                        </div>
+                        <a
+                          href="javascript:void(0)"
+                          target="_blank"
+                          class="cig--employer-profile-cta"
+                          >Employer Profile</a
+                        >
+                      </div>
+                    </div>
+                    <!-- ----------------------- -->
+                    <!-- --- Job Description --- -->
+                    <!-- ----------------------- -->
+                    <section class="cig--detail-description">
+                      <h3>Job Description</h3>
+                      <p>
+                        South Coast Air Quality Management District (South Coast
+                        AQMD) is one of the largest and most technologically
+                        sophisticated environmental regulatory agencies in the
+                        Nation. We serve a four-county region that includes
+                        large areas of Los Angeles, Orange County, Riverside and
+                        San Bernardino counties, including the Coachella Valley,
+                        which is home to more than 17 million people. South
+                        Coast AQMD's headquarters is located in Diamond Bar, 30
+                        miles east of downtown Los Angeles, at the junction of
+                        the 57 and 60 freeways. With a highly diverse "Clean Air
+                        Team" of over 800 employees, and an annual budget of
+                        $189.2 million, our mission is to ensure clean air and a
+                        healthy environment.
+                      </p>
+                      <p>
+                        South Coast AQMD is an organization you can be proud to
+                        work for -- we make a difference in the quality of life
+                        in Southern California! Please view our video to meet
+                        our Clean Air Team!
+                      </p>
+                      <h3>THE SELECTION PROCESS:</h3>
+                      <p>
+                        Application packets and supplemental questionnaire will
+                        be carefully reviewed, and only those candidates with
+                        the most competitive and/or directly transferable
+                        experience will be invited to the next step in the
+                        process, which is expected to be performance-based
+                        computer skills testing, which include a Basic Microsoft
+                        Word Exam and Intermediate Microsoft Excel Exam.
+                      </p>
+                      <p>
+                        Following the computer skills test, the most competitive
+                        candidates will be invited to a written multiple-choice
+                        examination.
+                      </p>
+                      <p>
+                        Performance in the above skills and written exam testing
+                        are expected to result in a ranked eligible list, from
+                        which current and future vacancies may be filled, during
+                        the 6-12 month life of the list.
+                      </p>
+                      <strong
+                        >Please note : The computer testing and written exam may
+                        be conducted remotely.</strong
+                      >
+                      <p>
+                        Only those who demonstrate at each successive step of
+                        the selection process that they are among the most
+                        competitively qualified will be advanced to the next
+                        step. Meeting the minimum qualifications does not
+                        guarantee an invitation to future steps in the process.
+                      </p>
+                      <p>
+                        South Coast AQMD reserves the right to add, delete, or
+                        modify any elements of the selection process as deemed
+                        appropriate, based on the number and quality of
+                        applicants at each step. Candidates who may need
+                        accommodations during the selection process must call
+                        the Human Resources Department at least one week prior
+                        to any test dates.
+                      </p>
+                      <h3>ABOUT THE POSITION</h3>
+                      <p>
+                        Senior Office Assistant is the lead-worker or advanced
+                        journey-level class in the Office Assistant series.
+                        Under general supervision, a Senior Office Assistant
+                        assigns, coordinates, reviews and participates in a
+                        variety of office assistance and clerical support
+                        duties; and/or performs specialized, complex office
+                        assistant duties and clerical support duties of
+                        above-average difficulty; operates automated office
+                        equipment; and does other work as required.
+                      </p>
+                      <h3>EXAMPLES OF DUTIES:</h3>
+                      <p>
+                        Assigns, reviews, participates in, and coordinates the
+                        activities of a unit engaged in performing general or
+                        specialized office support work; monitors the workload
+                        and prioritizes assignments to ensure the timely
+                        completion of work; compiles unit statistical production
+                        reports maintained by staff for supervisory review; may
+                        coordinate the flow of work with other units.
+                      </p>
+                      <p>
+                        Trains and instructs new employees on operational
+                        procedures and divisional rules, regulations, and
+                        procedures; provides technical guidance on difficult
+                        work problems by explaining the application of
+                        operational procedures specific to the situation.
+                      </p>
+                      <p>
+                        Establishes alphabetical, numerical, chronological,
+                        and/or subject matter filing systems; prepares,
+                        arranges, indexes, and cross-references files, as
+                        needed; updates and organizes files to determine the
+                        appropriateness of revising, deleting, or purging
+                        information; maintains a variety of records, logs,
+                        rosters, and registers; may prepare statistical and
+                        other types of reports; may review office supplies and
+                        requisition forms, and prepares supply requests based on
+                        anticipated needs.
+                      </p>
+                      <h3>MINIMUM AND DESIREALBE QUALIFICATIONS</h3>
+                      <p>
+                        DESIRABLE QUALIFICATIONS:In addition to the Minimum
+                        Qualifications that follow, the most competitive
+                        candidates will possess:
+                      </p>
+                      <ul>
+                        <li>
+                          At least three years of journey-level experience,
+                          performing a variety of clerical support duties.
+                        </li>
+                        <li>
+                          Experience working for a government agency or public
+                          organization.
+                        </li>
+                        <li>Excellent customer service skills.</li>
+                        <li>
+                          Experience providing clerical support to a large
+                          staff, reporting to multiple supervisors.
+                        </li>
+                        <li>
+                          Experience working in a fast-paced department,
+                          juggling competing priorities and deadlines.
+                        </li>
+                        <li>Strong data entry experience and skills.</li>
+                        <li>
+                          Experience updating/maintaining web pages is a plus.
+                        </li>
+                      </ul>
+                      <h3>MINIMUM QUALIFICATIONS:</h3>
+                      <p>
+                        <strong>SKILL</strong>: Type 30 net words per minute.
+                        (The typing certificate must be attached to the
+                        application. Please click here to review typing
+                        certificate requirements. )
+                      </p>
+                      <p>EITHER I-</p>
+                      <p>
+                        <strong>EXPERIENCE:</strong> One year as an Office
+                        Assistant.
+                      </p>
+                      <p>-OR II-</p>
+                      <p>
+                        <strong>EXPERIENCE:</strong> Two years performing a
+                        variety of journey-level clerical duties.
+                      </p>
+                      <p>
+                        <strong>SUBSTITUTION:</strong> Completion of 18 semester
+                        (27 quarter) units from an accredited college or
+                        university in secretarial sciences, office practices,
+                        business education, or a closely related field, or
+                        completion of 360 hours of training from a recognized
+                        occupational training program in any of the above-listed
+                        fields may substitute for up to one year of the
+                        experience required under Option II.
+                      </p>
+                      <p>
+                        <strong>KNOWLEDGE OF: </strong>Modern office and
+                        record-keeping practices, including alphabetical,
+                        numerical, chronological, and subject matter filing
+                        procedures; correct spelling, grammar, and punctuation
+                        to prepare correspondence and proofread finished copy;
+                        use and maintenance of computerized databases; computers
+                        and other automated equipment for data entry and word
+                        processing purposes, and well as other office equipment,
+                        including calculators, scanners, photocopiers and
+                        printers.
+                      </p>
+                      <p>
+                        <strong>ABILITY TO: </strong>rain and review the work of
+                        other staff; explain and apply South Coast AQMD rules,
+                        regulations, policies, and procedures specific to the
+                        area of assignment; effectively communicate detailed and
+                        complex rules, regulations, and clerical procedures to
+                        the public and South Coast AQMD employees; sort,
+                        classify, compile, and verify data; review and proofread
+                        documents for accuracy and completeness; maintain logs
+                        and records, including computerized filing systems and
+                        databases; make accurate arithmetical computations;
+                        operate a variety of standard and automated office
+                        machines; understand and follow oral and written
+                        instructions; establish and maintain effective working
+                        relationships with South Coast AQMD personnel and others
+                        contacted in the course of work.
+                      </p>
+                      <h3>
+                        OFFICE CLERICAL & MAINTENANCE EMPLOYEE BENEFIT OVERVIEW
+                      </h3>
+                      <p>
+                        <strong>Monthly Benefit Allotment:</strong><br />$1,401,
+                        to purchase medical, dental, and life insurance, with
+                        unused portion paid to you as cash
+                      </p>
+                      <strong>Medical Health Plans:</strong>
+                      <ul>
+                        <li>Blue Shield PPO</li>
+                        <li>
+                          Blue Shield PPO Savings Plus 2250 (High Deductible
+                          Plan)
+                        </li>
+                        <li>Blue Shield HMO</li>
+                        <li>Kaiser HMO</li>
+                        <li>Kaiser HSA HMO 1500 (High Deductible Plan)</li>
+                      </ul>
+                      <strong>Dental Plans:</strong>
+                      <ul>
+                        <li>Delta Dental (without orthodontic benefits)</li>
+                        <li>
+                          Delta Dental (with orthodontic benefits for children
+                          only)
+                        </li>
+                        <li>DeltaCare (PMI) Dental</li>
+                      </ul>
+                      <strong>Life Insurance:</strong>
+                      <p>
+                        $10,000 Term Life Insurance <br />
+                        (Optional additional life insurance, paid by you, at 1X,
+                        2X, or 3X your salary)
+                      </p>
+                      <strong>Vacation:</strong>
+                      <p>
+                        80 hours per year, increasing to 120 after five years
+                      </p>
+                      <strong>Retirement:</strong>
+                      <p>
+                        2.5% @ 67 defined benefit plan - Applies to employees
+                        hired on or after January 1, 2013 who, at time of hire,
+                        were not members of the San Bernardino County Employees'
+                        Retirement Association (SBCERA) or another public
+                        employee retirement system through which reciprocity may
+                        be established.
+                      </p>
+                      <p>
+                        2.0% @ 55 defined benefit plan - Applies to employees
+                        who, prior to January 1, 2013, were active members of
+                        SBCERA or another public employee retirement system
+                        through which reciprocity may be established.
+                      </p>
+                      <p>
+                        Employees pay only the Medicare portion of Social
+                        Security.
+                      </p>
+                      <strong>02/05/2020</strong>
+                      <h3>BASE PAY</h3>
+                      <p>42,989</p>
+                      <h3>JOB ADDRESS</h3>
+                      <p>
+                        Diamond Bar, California United States
+                        <a href="javascript:void(0)" target="_blank"
+                          >View Map</a
+                        >
+                      </p>
+                    </section>
+
+                    <!-- ------------------------- -->
+                    <!-- --- Job Apply(Sticky) --- -->
+                    <!-- ------------------------- -->
+                    <section class="cig--job-application-sticky-wrapper">
+                      <!-- Scroll Top Button -->
+                      <button class="hide-scroll cig__scroll_top"></button>
+                      <div class="cig--application-cta-wrapper">
+                        <a href="javascript:void(0)" class="cig--apply-cta"
+                          >Apply now</a
+                        >
+                        <div class="cig--share-links-wrapper">
+                          <span>Share this job:</span>
+                          <div class="cig--social-share-link-wrapper">
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-fb"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-tw"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-gp"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-in"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-pi"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-ev"></span
+                              ></a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="cig--application-referral">
+                      <p>
+                        Please mention you found this employment opportunity on
+                        the
+                        <a href="javascript:void(0)" target="_blank"
+                          >CareersInGovernment.com</a
+                        >
+                        job board.
+                      </p>
+                    </section>
+                  </li>
+                  <li class="job__desc">
+                    <div class="cig-job-heading-details-container">
+                      <div class="cig--detail-heading-wrapper">
+                        <h2>Senior Financial Aid Specialist</h2>
+                        <div
+                          class="cig--search-result-save-cta cig--search-result-save-cta-pc"
+                        >
+                          <a
+                            href="javascript:void(0)"
+                            class="cig--search-job-save-cta"
+                            data-save="3"
+                            >Save</a
+                          >
+                        </div>
+                      </div>
+                      <div class="cig--detail-profile-wrapper">
+                        <div class="cig--detail-profile-firstchild">
+                          <div class="cig--employer-detail-list">
+                            <span>Rocklin, California</span>
+                            <span>SIERRA JOINT COMMUNITY COLLEGE DISTRICT</span>
+                            <span>Full Time</span>
+                            <span>$29.23 Hourly USD</span>
+                            <span>Jul 08, 2023</span>
+                          </div>
+                        </div>
+                        <div class="cig--detail-profile-secondchild">
+                          <div class="cig--employer-head-wrapper">
+                            <img src="../assets/company-logo-02.png" alt="" />
+                            <span class="cig--employer-name">
+                              <strong>Employer:</strong>
+                              <h3>SIERRA JOINT COMMUNITY COLLEGE DISTRICT</h3>
+                            </span>
+                          </div>
+                          <p class="cig--employer-desc-excerpt">
+                            Since its founding in 1936, Sierra College has
+                            focused on quality instruction and meeting the needs
+                            of the communities that it serves.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cig--employer-cta-wrapper">
+                        <div
+                          class="cig--search-result-save-cta cig--search-result-save-cta-mobile"
+                        >
+                          <a
+                            href="javascript:void(0)"
+                            class="cig--search-job-save-cta"
+                            data-save="3"
+                            >Save</a
+                          >
+                        </div>
+                        <a
+                          href="javascript:void(0)"
+                          target="_blank"
+                          class="cig--employer-profile-cta"
+                          >Employer Profile</a
+                        >
+                      </div>
+                    </div>
+                    <!-- ----------------------- -->
+                    <!-- --- Job Description --- -->
+                    <!-- ----------------------- -->
+                    <section class="cig--detail-description">
+                      <h3>Job Description</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sit, nihil? Modi, unde eligendi voluptates impedit
+                        architecto nostrum temporibus itaque officia aperiam
+                        voluptate. Accusamus accusantium facilis placeat
+                        consequatur, tenetur voluptas reprehenderit at sint
+                        maxime aperiam ullam, sunt consectetur cupiditate quo et
+                        itaque rem incidunt! Aspernatur exercitationem
+                        necessitatibus illo vitae quod rem.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sit, nihil? Modi, unde eligendi voluptates impedit
+                        architecto nostrum temporibus itaque officia aperiam
+                        voluptate. Accusamus accusantium facilis placeat
+                        consequatur, tenetur voluptas reprehenderit at sint
+                        maxime aperiam ullam, sunt consectetur cupiditate quo et
+                        itaque rem incidunt! Aspernatur exercitationem
+                        necessitatibus illo vitae quod rem.
+                      </p>
+                    </section>
+
+                    <!-- ------------------------- -->
+                    <!-- --- Job Apply(Sticky) --- -->
+                    <!-- ------------------------- -->
+                    <section class="cig--job-application-sticky-wrapper">
+                      <!-- Scroll Top Button -->
+                      <button class="hide-scroll cig__scroll_top"></button>
+                      <div class="cig--application-cta-wrapper">
+                        <a href="javascript:void(0)" class="cig--apply-cta"
+                          >Apply now</a
+                        >
+                        <div class="cig--share-links-wrapper">
+                          <span>Share this job:</span>
+                          <div class="cig--social-share-link-wrapper">
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-fb"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-tw"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-gp"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-in"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-pi"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-ev"></span
+                              ></a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="cig--application-referral">
+                      <p>
+                        Please mention you found this employment opportunity on
+                        the
+                        <a href="javascript:void(0)" target="_blank"
+                          >CareersInGovernment.com</a
+                        >
+                        job board.
+                      </p>
+                    </section>
+                  </li>
+                  <li class="job__desc">
+                    <div class="cig-job-heading-details-container">
+                      <div class="cig--detail-heading-wrapper">
+                        <h2>Information Technology Specialist</h2>
+                        <div
+                          class="cig--search-result-save-cta cig--search-result-save-cta-pc"
+                        >
+                          <a
+                            href="javascript:void(0)"
+                            class="cig--search-job-save-cta"
+                            data-save="4"
+                            >Save</a
+                          >
+                        </div>
+                      </div>
+                      <div class="cig--detail-profile-wrapper">
+                        <div class="cig--detail-profile-firstchild">
+                          <div class="cig--employer-detail-list">
+                            <span>Rocklin, California</span>
+                            <span>PLACER COUNTY, CA</span>
+                            <span>Full Time</span>
+                            <span>$84,739.20 - $105,809.60/year USD</span>
+                            <span>Jul 08, 2023</span>
+                          </div>
+                        </div>
+                        <div class="cig--detail-profile-secondchild">
+                          <div class="cig--employer-head-wrapper">
+                            <img src="../assets/feat-logo-03.png" alt="" />
+                            <span class="cig--employer-name">
+                              <strong>Employer:</strong>
+                              <h3>PLACER COUNTY, CA</h3>
+                            </span>
+                          </div>
+                          <p class="cig--employer-desc-excerpt">
+                            Placer County is a prosperous community
+                            characterized by a healthy and diverse economy,
+                            attractive business environment, and residents who
+                            benefit from high quality educational, safety, and
+                            healthcare infrastructure, in addition to a wide
+                            variety of outstanding recreational opportunities.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cig--employer-cta-wrapper">
+                        <div
+                          class="cig--search-result-save-cta cig--search-result-save-cta-mobile"
+                        >
+                          <a
+                            href="javascript:void(0)"
+                            class="cig--search-job-save-cta"
+                            data-save="4"
+                            >Save</a
+                          >
+                        </div>
+                        <a
+                          href="javascript:void(0)"
+                          target="_blank"
+                          class="cig--employer-profile-cta"
+                          >Employer Profile</a
+                        >
+                      </div>
+                    </div>
+                    <!-- ----------------------- -->
+                    <!-- --- Job Description --- -->
+                    <!-- ----------------------- -->
+                    <section class="cig--detail-description">
+                      <h3>Job Description</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sit, nihil? Modi, unde eligendi voluptates impedit
+                        architecto nostrum temporibus itaque officia aperiam
+                        voluptate. Accusamus accusantium facilis placeat
+                        consequatur, tenetur voluptas reprehenderit at sint
+                        maxime aperiam ullam, sunt consectetur cupiditate quo et
+                        itaque rem incidunt! Aspernatur exercitationem
+                        necessitatibus illo vitae quod rem.
+                      </p>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Dicta quibusdam voluptatem explicabo commodi
+                        tempore eaque atque itaque quod adipisci unde minus,
+                        odit quisquam consequuntur dolore saepe ratione officiis
+                        esse? Quaerat deserunt autem dicta maiores, quasi quo
+                        possimus rem adipisci laboriosam et minus repellendus
+                        debitis neque nulla tempora velit magni similique
+                        obcaecati, harum aperiam ipsam ipsa. Laborum, ratione
+                        ipsam. Voluptatem autem, blanditiis repellendus ipsam
+                        velit enim ex assumenda!
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sit, nihil? Modi, unde eligendi voluptates impedit
+                        architecto nostrum temporibus itaque officia aperiam
+                        voluptate. Accusamus accusantium facilis placeat
+                        consequatur, tenetur voluptas reprehenderit at sint
+                        maxime aperiam ullam, sunt consectetur cupiditate quo et
+                        itaque rem incidunt! Aspernatur exercitationem
+                        necessitatibus illo vitae quod rem.
+                      </p>
+                    </section>
+
+                    <!-- ------------------------- -->
+                    <!-- --- Job Apply(Sticky) --- -->
+                    <!-- ------------------------- -->
+                    <section class="cig--job-application-sticky-wrapper">
+                      <!-- Scroll Top Button -->
+                      <button class="hide-scroll cig__scroll_top"></button>
+                      <div class="cig--application-cta-wrapper">
+                        <a href="javascript:void(0)" class="cig--apply-cta"
+                          >Apply now</a
+                        >
+                        <div class="cig--share-links-wrapper">
+                          <span>Share this job:</span>
+                          <div class="cig--social-share-link-wrapper">
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-fb"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-tw"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-gp"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-in"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-pi"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-ev"></span
+                              ></a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="cig--application-referral">
+                      <p>
+                        Please mention you found this employment opportunity on
+                        the
+                        <a href="javascript:void(0)" target="_blank"
+                          >CareersInGovernment.com</a
+                        >
+                        job board.
+                      </p>
+                    </section>
+                  </li>
+                  <li class="job__desc">
+                    <div class="cig-job-heading-details-container">
+                      <div class="cig--detail-heading-wrapper">
+                        <h2>
+                          Behavioral Health Therapist I - $1,000 - $5,000 NEW
+                          HIRE BONUS
+                        </h2>
+                        <div
+                          class="cig--search-result-save-cta cig--search-result-save-cta-pc"
+                        >
+                          <a
+                            href="javascript:void(0)"
+                            class="cig--search-job-save-cta"
+                            data-save="5"
+                            >Save</a
+                          >
+                        </div>
+                      </div>
+                      <div class="cig--detail-profile-wrapper">
+                        <div class="cig--detail-profile-firstchild">
+                          <div class="cig--employer-detail-list">
+                            <span>Grass Valley, California</span>
+                            <span>Nevada County, CA</span>
+                            <span>Full Time</span>
+                            <span>$68,451.00 - $83,564.64</span>
+                            <span>Jul 08, 2023</span>
+                          </div>
+                        </div>
+                        <div class="cig--detail-profile-secondchild">
+                          <div class="cig--employer-head-wrapper">
+                            <img src="../assets/company-logo-03.png" alt="" />
+                            <span class="cig--employer-name">
+                              <strong>Employer:</strong>
+                              <h3>Nevada County, CA</h3>
+                            </span>
+                          </div>
+                          <p class="cig--employer-desc-excerpt">
+                            Nestled into the western slope of the Sierra Nevada
+                            Mountains, Nevada County is known as the heart of
+                            the “Gold Country.” Nevada County is known to
+                            provide its residents with a great quality of life.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cig--employer-cta-wrapper">
+                        <div
+                          class="cig--search-result-save-cta cig--search-result-save-cta-mobile"
+                        >
+                          <a
+                            href="javascript:void(0)"
+                            class="cig--search-job-save-cta"
+                            data-save="5"
+                            >Save</a
+                          >
+                        </div>
+                        <a
+                          href="javascript:void(0)"
+                          target="_blank"
+                          class="cig--employer-profile-cta"
+                          >Employer Profile</a
+                        >
+                      </div>
+                    </div>
+                    <!-- ----------------------- -->
+                    <!-- --- Job Description --- -->
+                    <!-- ----------------------- -->
+                    <section class="cig--detail-description">
+                      <h3>Job Description</h3>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Nemo adipisci asperiores, sapiente odit, dolor
+                        nisi ipsam explicabo optio autem eius dignissimos
+                        impedit dolorum.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sit, nihil? Modi, unde eligendi voluptates impedit
+                        architecto nostrum temporibus itaque officia aperiam
+                        voluptate. Accusamus accusantium facilis placeat
+                        consequatur, tenetur voluptas reprehenderit at sint
+                        maxime aperiam ullam, sunt consectetur cupiditate quo et
+                        itaque rem incidunt! Aspernatur exercitationem
+                        necessitatibus illo vitae quod rem.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Modi voluptas cumque beatae ea explicabo rem
+                        voluptates quis dolorem? Odio, alias maiores ipsum earum
+                        rem saepe nihil possimus quaerat quod, accusamus
+                        incidunt. Eligendi vitae atque cupiditate illum, laborum
+                        inventore impedit totam blanditiis deserunt possimus
+                        consectetur veniam, qui ut provident enim, numquam velit
+                        quam esse architecto necessitatibus deleniti aliquam.
+                        Quibusdam repellat consequatur esse. A quam delectus
+                        reiciendis nemo facere.
+                      </p>
+                    </section>
+
+                    <!-- ------------------------- -->
+                    <!-- --- Job Apply(Sticky) --- -->
+                    <!-- ------------------------- -->
+                    <section class="cig--job-application-sticky-wrapper">
+                      <!-- Scroll Top Button -->
+                      <button class="hide-scroll cig__scroll_top"></button>
+                      <div class="cig--application-cta-wrapper">
+                        <a href="javascript:void(0)" class="cig--apply-cta"
+                          >Apply now</a
+                        >
+                        <div class="cig--share-links-wrapper">
+                          <span>Share this job:</span>
+                          <div class="cig--social-share-link-wrapper">
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-fb"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-tw"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-gp"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-in"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-pi"></span
+                              ></a>
+                            </span>
+                            <span>
+                              <a href="javascript:void(0)"
+                                ><span class="cig--share-social-link-ev"></span
+                              ></a>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="cig--application-referral">
+                      <p>
+                        Please mention you found this employment opportunity on
+                        the
+                        <a href="javascript:void(0)" target="_blank"
+                          >CareersInGovernment.com</a
+                        >
+                        job board.
+                      </p>
+                    </section>
+                  </li>
+                </ul>
+
+                <!-- ------------------- -->
+                <!-- --- Latest Jobs --- -->
+                <!-- ------------------- -->
+                <section>
+                  <div class="cig--latest-job-card-wrapper">
+                    <h3>LATEST JOBS</h3>
+                    <ul class="cig--latest-job-card-list">
+                      <li
+                        class="cig--search-result-wrapper cig--search-result-wrapper-rounded cig--card-border"
+                      >
+                        <div class="cig--search-result-list-heading">
+                          <img src="../assets/company-logo-02.png" alt="" />
+                          <a href="javascript:void(0)">
+                            <h2>
+                              Behavioral Health Therapist I - $1,000 - $5,000
+                              NEW HIRE BONUS
+                            </h2>
+                          </a>
+                        </div>
+                        <div class="cig--search-result-list-content">
+                          <div class="cig--search-result-save-cta">
+                            <a href="javascript:void(0)">Save</a>
+                          </div>
+                          <div class="cig--search-result-info">
+                            <p class="cig--search-result-desc">
+                              Lorem ipsum, dolor sit amet consectetur
+                              adipisicing elit. Nemo adipisci asperiores,
+                              sapiente odit, dolor nisi ipsam explicabo optio
+                              autem eius dignissimos impedit dolorum.
+                            </p>
+                            <!-- SWITCH START -->
+                            <section class="cig--switcher">
+                              <!-- State: Excerpt -->
+                              <div class="switcher--excerpt RTETextWrapper">
+                                <ul class="cig--switch-pill-wrapper">
+                                  <li>
+                                    <span>Full Time</span>
+                                  </li>
+                                  <li>
+                                    <span>Public Health</span>
+                                  </li>
+                                  <li>
+                                    <span>Physical Therapist</span>
+                                  </li>
+                                  <li>
+                                    <span>Physicians and Surgeons</span>
+                                  </li>
+                                  <li>
+                                    <span>Epidemiologist</span>
+                                  </li>
+                                </ul>
+                                <div class="cig--pill-cta-wrapper">
+                                  <span class="pill--total">Total: </span>
+                                  <a
+                                    href="javascript:void(0)"
+                                    class="switcher-btn showMore"
+                                    >Expand</a
+                                  >
+                                </div>
+                              </div>
+                              <!-- State: Full Content -->
+                              <div class="switch--content RTETextWrapper">
+                                <ul class="cig--switch-pill-wrapper">
+                                  <li>
+                                    <span>Full Time</span>
+                                  </li>
+                                  <li>
+                                    <span>Public Health</span>
+                                  </li>
+                                  <li>
+                                    <span>Physical Therapist</span>
+                                  </li>
+                                  <li>
+                                    <span>Physicians and Surgeons</span>
+                                  </li>
+                                  <li>
+                                    <span>Epidemiologist</span>
+                                  </li>
+                                </ul>
+                                <div class="cig--pill-cta-wrapper">
+                                  <a
+                                    href="javascript:void(0)"
+                                    class="switcher-btn showLess"
+                                    >Collapse</a
+                                  >
+                                </div>
+                              </div>
+                            </section>
+                            <!-- SWITCH END -->
+                          </div>
+                        </div>
+                      </li>
+                      <li
+                        class="cig--search-result-wrapper cig--search-result-wrapper-rounded cig--card-border"
+                      >
+                        <div class="cig--search-result-list-heading">
+                          <img src="../assets/company-logo-03.png" alt="" />
+                          <a href="javascript:void(0)">
+                            <h2>
+                              Behavioral Health Therapist I - $1,000 - $5,000
+                              NEW HIRE BONUS
+                            </h2>
+                          </a>
+                        </div>
+                        <div class="cig--search-result-list-content">
+                          <div class="cig--search-result-save-cta">
+                            <a href="javascript:void(0)">Save</a>
+                          </div>
+                          <div class="cig--search-result-info">
+                            <p class="cig--search-result-desc">
+                              Lorem ipsum, dolor sit amet consectetur
+                              adipisicing elit. Nemo adipisci asperiores,
+                              sapiente odit, dolor nisi ipsam explicabo optio
+                              autem eius dignissimos impedit dolorum.
+                            </p>
+                            <!-- SWITCH START -->
+                            <section class="cig--switcher">
+                              <!-- State: Excerpt -->
+                              <div class="switcher--excerpt RTETextWrapper">
+                                <ul class="cig--switch-pill-wrapper">
+                                  <li>
+                                    <span>Full Time</span>
+                                  </li>
+                                  <li>
+                                    <span>Public Health</span>
+                                  </li>
+                                  <li>
+                                    <span>Physical Therapist</span>
+                                  </li>
+                                  <li>
+                                    <span>Physicians and Surgeons</span>
+                                  </li>
+                                  <li>
+                                    <span>Epidemiologist</span>
+                                  </li>
+                                </ul>
+                                <div class="cig--pill-cta-wrapper">
+                                  <span class="pill--total">Total: </span>
+                                  <a
+                                    href="javascript:void(0)"
+                                    class="switcher-btn showMore"
+                                    >Expand</a
+                                  >
+                                </div>
+                              </div>
+                              <!-- State: Full Content -->
+                              <div class="switch--content RTETextWrapper">
+                                <ul class="cig--switch-pill-wrapper">
+                                  <li>
+                                    <span>Full Time</span>
+                                  </li>
+                                  <li>
+                                    <span>Public Health</span>
+                                  </li>
+                                  <li>
+                                    <span>Physical Therapist</span>
+                                  </li>
+                                  <li>
+                                    <span>Physicians and Surgeons</span>
+                                  </li>
+                                  <li>
+                                    <span>Epidemiologist</span>
+                                  </li>
+                                </ul>
+                                <div class="cig--pill-cta-wrapper">
+                                  <a
+                                    href="javascript:void(0)"
+                                    class="switcher-btn showLess"
+                                    >Collapse</a
+                                  >
+                                </div>
+                              </div>
+                            </section>
+                            <!-- SWITCH END -->
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Load More Recent Jobs -->
+                  <div
+                    class="cig--loadmore-cta-wrapper cig--loadmore-cta-wrapper-bg"
+                  >
+                    <a href="javascript:void(0)">Load More</a>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!-- Footer ------------------------ -->
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <footer id="cig__footer">
+      <div class="cig--footer-container">
+        <ul class="cig--footer-wrapper">
+          <li class="cig--footer-firstchild">
+            <a href="javascript:void(0)">
+              <img
+                src="../assets/svg/cig-logo-white.svg"
+                alt="Careers In Government"
+              />
+            </a>
+            <h2><span>CAREERS</span> IN GOVERNMENT</h2>
+            <span>Your career search just got easier</span>
+            <ul class="cig--footer-social-links">
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  ><img src="../assets/svg/linkedin-white.svg" alt="linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  ><img src="../assets/svg/twitter-white.svg" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  ><img src="../assets/svg/facebook-white.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  ><img src="../assets/svg/instagram-white.svg" alt="instagram"
+                /></a>
+              </li>
+            </ul>
+            <div class="cig--select-dropdown-footer">
+              <select class="cig--select-styled-footer">
+                <option value="EN">English</option>
+                <option value="ES">Spanish</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <strong>gov talk</strong>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" target="_blank">COVID RESOURCES</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >EDUCATION/TRAINING</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >ELIGIBILITY/HIRING ISSUES</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >JOB DESCRIPTIONS/GLOSSARY</a
+                >
+              </li>
+              <li><a href="javascript:void(0)" target="_blank">OVERVIEW</a></li>
+              <li><a href="javascript:void(0)" target="_blank">TRENDS</a></li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >PUBLIC SECTOR NEWS</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">OUR AUTHORS</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>employer tools</strong>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" target="_blank">POST A JOB</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >REQUEST INFORMATION</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >EMPLOYER REGISTRATION</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >EMPLOYER RESOURCES</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">EMPLOYERS FAQ</a>
+              </li>
+              <li><a href="javascript:void(0)" target="_blank">TRENDS</a></li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >LEVERAGING YOUR ONLINE PRESENCE</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >HEALTH AND WELLNESS EMPOWERMENT</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>career tools</strong>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >JOB SEEKER TOOLS</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">SEARCH FOR JOBS</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">POST A RESUME</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >LOCATION SPOTLIGHT</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >COMMUNITY LISTINGS</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >QUESTIONS AND ANSWERS</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >HIRE GOVERNMENT INITIATIVE</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>career advice</strong>
+            <ul>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >NETWORKING/INTERVIEWING</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">ON THE JOB</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >PERSONALITY ASSESSMENT</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank"
+                  >RESUMES/COVER LETTERS</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">INNOVATIONS</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" target="_blank">SOCIAL MEDIA</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <span class="cig--copyright"
+          >© 2000-2023 by Careers in Government |
+          <a href="javascript:void(0)" target="_blank">Privacy Policy</a> |
+          <a href="javascript:void(0)" target="_blank"
+            >Accessibility Statement</a
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

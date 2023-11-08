@@ -1,0 +1,230 @@
+/* --------------- */
+/* --- Borders --- */
+/* --------------- */
+.cig--card-border-edge {
+  position: relative;
+  z-index: 1;
+}
+.cig--card-border-edge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0px;
+  padding: 1px;
+  background: linear-gradient(140deg, #6c340b, #d5bcaa);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 2;
+}
+
+/*List wrapper */
+.cig--vertical-margin{
+margin: 2rem 0;
+}
+
+/* List Styles */
+ul.cig--search-result-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+}
+li.cig--search-result-wrapper {
+  list-style: none;
+}
+li.cig--search-result-wrapper:last-child {
+  margin-bottom: 0px;
+}
+li.cig--search-result-wrapper:hover {
+  background: var(--color-blue-light-bg);
+}
+
+.cig--search-result-list-heading a {
+  text-decoration: none;
+  z-index: 2;
+}
+.cig--search-result-list-heading {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  border-bottom: var(--border-grey);
+  padding: 5px 1rem;
+  min-height: 70px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 19%,
+    rgba(242, 242, 242, 0) 36%
+  );
+  box-sizing: border-box;
+}
+.cig--search-result-list-heading img {
+  width: 66px;
+  height: 50px;
+  background: var(--color-white);
+  object-fit: contain;
+}
+.cig--search-result-list-heading h2 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--color-blue-light);
+}
+
+.cig--search-result-list-content {
+  width: auto;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  background: #e9e9e92d;
+  position: relative;
+}
+.cig--search-result-save-cta,
+.cig--search-result-info {
+  position: relative;
+  width: auto;
+  z-index: 2;
+}
+.cig--search-result-save-cta {
+  min-width: 66px;
+}
+.cig--search-result-info {
+  width: 100%;
+}
+.cig--search-result-desc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin: 0 0 1rem;
+}
+.cig--search-result-save-cta a {
+  text-decoration: none;
+  padding: 5px 10px 5px 22px;
+  background: var(--color-blue-dark);
+  border-radius: 50px;
+  color: var(--color-white);
+  transition: 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  /* min-width: 36px; */
+}
+.cig--search-result-save-cta a::before {
+  content: "";
+  width: 10px;
+  height: 15px;
+  background: url(../assets/svg/save-white.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+}
+.cig--search-result-save-cta a:hover {
+  background: var(--color-grey-dark);
+}
+.cig--search-result-save-cta a.save--toggle {
+  background: #747474;
+}
+
+/* --------------- */
+/* --- SWITCH ---  */
+/* --------------- */
+ul.cig--switch-pill-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 3;
+}
+ul.cig--switch-pill-wrapper li {
+  list-style: none;
+  border: var(--border-grey);
+  background: var(--color-white);
+  border-radius: 50px;
+  padding: 3px 8px;
+}
+ul.cig--switch-pill-wrapper li span {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.cig--feat-cta-wrapper {
+  background: var(--color-white);
+  border-radius: 0 0 10px 10px;
+  padding: 1.5rem;
+}
+.cig--feat-cta-wrapper a.cig--feat-cta {
+  background: var(--color-blue-dark);
+  color: var(--color-white);
+  border-radius: 50px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s ease;
+  position: relative;
+  z-index: 3;
+}
+.cig--feat-cta-wrapper a.cig--feat-cta:hover {
+  background: var(--color-grey-dark);
+}
+/* --- */
+/* .switch--content.RTETextWrapper {
+  display: none;
+} */
+.cig--switcher {
+  position: relative;
+  z-index: 3;
+}
+.switcher--excerpt ul {
+  height: 30px;
+  overflow-y: hidden;
+}
+.cig--pill-cta-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+}
+a.switcher-btn {
+  display: block;
+  text-decoration: none;
+  color: var(--color-blue-light);
+  font-size: 14px;
+}
+a.switcher-btn.showLess {
+  text-align: right;
+  width: 100%;
+}
+span.pill--total {
+  font-size: 14px;
+  color: var(--color-grey-dark);
+}
+/* ------------------- */
+/* --- SWITCH END ---- */
+/* ------------------- */
+
+@media (max-width: 768px) {
+  .cig--search-container-max-width {
+    margin-inline: auto;
+    position: relative;
+    max-width: 100%;
+    padding: 0px;
+  }
+  .cig--search-result-list-content {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+}

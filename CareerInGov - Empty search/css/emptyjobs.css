@@ -1,0 +1,73 @@
+:root {
+  --color-blue-light: #2867c6;
+  --color-blue-dark: #112d51;
+  --color-blue-light-text: #5a607a;
+  --color-blue-light-bg: #eff5f9;
+  --color-white: #fff;
+  --color-grey-dark: #1a1b24;
+  --color-grey-light: #fafafa;
+  --color-grey-dark-text: #434343;
+  --color-grey-mid: #666666;
+  --border-grey: 1px solid #d7d7d7;
+  --border-radius-10: 10px;
+  --border-radius-5: 5px;
+  --max-width: 1170px;
+  --transition-main: 0.2s ease;
+  --shadow-main: 0px 4px 6px 1px rgba(0, 0, 0, 0.15);
+}
+
+li.cig--empty-results-wrapper {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.cig--empty-results {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 1rem;
+}
+.cig--empty-results h2 {
+  margin: 0 0 8px;
+  color: var(--color-blue-dark);
+}
+.cig--empty-results p {
+  margin: 0;
+}
+.cig--empty-results-img {
+  background: url(../assets/svg/empty-search.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 270px;
+  margin-inline: auto;
+}
+
+/*  */
+
+.cig--empty-results-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+}
+.cig--empty-results-img-logo {
+  background: url(../assets/svg/career-logo-centered.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 300px;
+  height: 270px;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+.cig--empty-results p {
+  font-size: 14px;
+}
+}
