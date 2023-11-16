@@ -1,0 +1,416 @@
+/* GLOBAL */
+:root {
+  --color-blue-light: #2867c6;
+  --color-blue-dark: #112d51;
+  --color-blue-light-text: #5a607a;
+  --color-blue-light-bg: #eff5f9;
+  --color-white: #fff;
+  --color-grey-dark: #1a1b24;
+  --color-grey-light: #fafafa;
+  --color-grey-dark-text: #434343;
+  --color-grey-mid: #666666;
+  --border-grey: 1px solid #d7d7d7;
+  --border-radius-10: 10px;
+  --border-radius-5: 5px;
+  --max-width: 1170px;
+  --transition-main: 0.2s ease;
+  --shadow-main: 0px 4px 6px 1px rgba(0, 0, 0, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+input:focus {
+  /* border: 1px solid #2867c6;
+  box-shadow: inset 0.5px 0px 3px #2867c6; */
+  outline-offset: 0px;
+  outline: none;
+}
+/* GLOBAL */
+
+/* ----------------------- */
+/* H E R O   S E C T I O N */
+/* ----------------------- */
+.cig-hero-wrapper {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+  height: 260px;
+  background: #f4f8fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.cig-hero-content {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.cig-hero-content h1 {
+  color: #112d51;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+.cig-hero-content p {
+  color: #5a607a;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .cig-hero-wrapper {
+    height: 220px;
+    padding: 0 20px;
+  }
+}
+/* ----------------------- */
+/* B O D Y   C O N T E N T */
+/* ----------------------- */
+.cig-body-wrapper {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: -50px;
+  z-index: 0;
+}
+.cig-body-wrapper::before {
+  content: "";
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
+  height: 100%;
+  width: 45vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #f8f8f8;
+  background-image: url("../assets/find-job-main.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cig-body-content {
+  padding-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .cig-body-wrapper {
+    position: relative;
+    margin-top: -50px;
+    z-index: 0;
+  }
+  .cig-body-wrapper::before {
+    display: none;
+  }
+  .cig-body-wrapper::after {
+    content: "";
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+    height: 220px;
+    width: 100vw;
+    position: relative;
+    display: block;
+    background: #f8f8f8;
+    background: url("../assets/find-job-main.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* ----------------------- */
+/* F O R M             --- */
+/* ----------------------- */
+form.cig--search-job-form {
+  width: 50%;
+  padding: 50px 0;
+}
+.cig-form-control {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.cig-form-primary label {
+  color: #434343;
+  font-size: 16px;
+  font-weight: 600;
+}
+.cig-form-primary input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px 0;
+  position: relative;
+}
+
+/* Date picker */
+.date-icon-wrapper {
+  position: relative;
+}
+.date-icon-wrapper:before {
+  content: "";
+  display: block;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 35px;
+  border-radius: 4px;
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  z-index: -2;
+}
+.date-icon-wrapper:after {
+  z-index: -1;
+  content: "";
+  display: block;
+  font-size: 2rem;
+  color: STEELBLUE;
+  background: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='22' viewBox='0 0 23 22' fill='none'%3E%3Cpath d='M18.6934 2.75H15.9434V1.375H14.5684V2.75H9.06836V1.375H7.69336V2.75H4.94336C4.18711 2.75 3.56836 3.36875 3.56836 4.125V17.875C3.56836 18.6313 4.18711 19.25 4.94336 19.25H18.6934C19.4496 19.25 20.0684 18.6313 20.0684 17.875V4.125C20.0684 3.36875 19.4496 2.75 18.6934 2.75ZM18.6934 17.875H4.94336V8.25H18.6934V17.875ZM18.6934 6.875H4.94336V4.125H7.69336V5.5H9.06836V4.125H14.5684V5.5H15.9434V4.125H18.6934V6.875Z' fill='%23BDBDBD'/%3E%3C/svg%3E");
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 12px;
+  right: 7px;
+  cursor: pointer;
+}
+.date-icon-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+  padding: 2px;
+}
+.date-icon-input,
+.date-icon-input:focus {
+  background: rgba(0, 0, 0, 0);
+}
+
+form.cig-form-primary input[type="date"] {
+  padding: 7px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #444;
+}
+
+.cig-date-container {
+  position: relative;
+}
+span.cig-calendar-icon {
+  position: absolute;
+  z-index: 0;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='22' viewBox='0 0 23 22' fill='none'%3E%3Cpath d='M18.6934 2.75H15.9434V1.375H14.5684V2.75H9.06836V1.375H7.69336V2.75H4.94336C4.18711 2.75 3.56836 3.36875 3.56836 4.125V17.875C3.56836 18.6313 4.18711 19.25 4.94336 19.25H18.6934C19.4496 19.25 20.0684 18.6313 20.0684 17.875V4.125C20.0684 3.36875 19.4496 2.75 18.6934 2.75ZM18.6934 17.875H4.94336V8.25H18.6934V17.875ZM18.6934 6.875H4.94336V4.125H7.69336V5.5H9.06836V4.125H14.5684V5.5H15.9434V4.125H18.6934V6.875Z' fill='%23BDBDBD'/%3E%3C/svg%3E");
+  /* height: 20px;
+  width: 20px; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  form.cig--search-job-form {
+    width: 100%;
+    padding: 25px 0;
+  }
+}
+
+/* ----------------------------- */
+/* Keyword Search Dropdown start */
+/* ----------------------------- */
+#dropdown__keyword-dropdown {
+  position: absolute;
+  top: calc(100% + 0px);
+  padding: 14px;
+  padding-bottom: 0px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 1px 2px 4px 1px rgba(75, 75, 75, 0.15);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, 5px, 0);
+  overflow: hidden;
+  transition: 0.5s ease all;
+}
+.search_form_dropdown--active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translate3d(0, -5px, 0) !important;
+}
+
+section.cig--search-dropdown-wrapper li {
+  cursor: pointer;
+}
+
+.cig-search-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cig-search-dropdown ul.cig-search-recent-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.cig-search-dropdown strong {
+  color: #112d51;
+  font-size: 16px;
+}
+
+#dropdown__keyword-dropdown ul {
+  padding: 0;
+  gap: 10px;
+}
+#dropdown__keyword-dropdown ul li {
+  list-style: none;
+}
+ul.cig-search-recent-list li {
+  padding-left: 28px;
+  position: relative;
+  color: #666666;
+  font-size: 16px;
+}
+ul.cig-search-recent-list li::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569ZM12.9497 12.9497C14.2625 11.637 15 9.85652 15 8C15 6.14348 14.2625 4.36301 12.9497 3.05025C11.637 1.7375 9.85652 1 8 1C6.14348 1 4.36301 1.7375 3.05025 3.05025C1.7375 4.36301 1 6.14348 1 8C1 9.85652 1.7375 11.637 3.05025 12.9497C4.36301 14.2625 6.14348 15 8 15C9.85652 15 11.637 14.2625 12.9497 12.9497ZM7.85355 3.14645C7.94732 3.24021 8 3.36739 8 3.5V8.71L11.248 10.566C11.3598 10.6334 11.4408 10.7419 11.4736 10.8683C11.5065 10.9946 11.4886 11.1288 11.4238 11.2422C11.3591 11.3556 11.2525 11.4391 11.127 11.4749C11.0014 11.5108 10.8669 11.4961 10.752 11.434L7.252 9.434C7.17547 9.39029 7.11186 9.32712 7.06761 9.25091C7.02335 9.17469 7.00003 9.08813 7 9V3.5C7 3.36739 7.05268 3.24021 7.14645 3.14645C7.24021 3.05268 7.36739 3 7.5 3C7.63261 3 7.75979 3.05268 7.85355 3.14645Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 1px;
+  left: 1px;
+}
+ul.cig-search-suggest-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.cig-search-suggest-list li {
+  border: 1px solid #2867c6;
+  color: #2867c6;
+  font-weight: 400;
+  padding: 4px 10px;
+  border-radius: 50px;
+}
+/* --------------------------- */
+/* Keyword Search Dropdown end */
+/* --------------------------- */
+
+/* Submit CTA */
+.cig-form-cta-control {
+  margin-top: 1.5rem;
+}
+button.cig-form-primary-cta {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  min-width: 180px;
+  border-radius: 50px;
+  background: #112d51;
+  color: #fff;
+}
+
+/***************************/
+/* Select2 Plugin **********/
+/***************************/
+.select2.select2-container {
+  width: 100% !important;
+  margin: 5px 0;
+}
+.select2-container--default.select2-container--focus
+  .select2-selection--multiple {
+  border: 1px solid #dadada;
+  outline: 0;
+}
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+}
+.select2-container .select2-search--inline .select2-search__field {
+  box-sizing: border-box;
+  border: none;
+  font-size: 100%;
+  margin-top: 8px;
+  margin-left: 5px;
+  padding: 0;
+  max-width: 100%;
+  resize: none;
+  height: 18px;
+  vertical-align: bottom;
+  font-family: sans-serif;
+  overflow: hidden;
+  word-break: keep-all;
+}
+.select2-container--default .select2-selection--multiple {
+  background-color: white;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  cursor: text;
+  padding-bottom: 8px;
+  padding-right: 5px;
+  position: relative;
+}
+.select2-container .select2-selection--single {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 36px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-right: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 26px;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  width: 20px;
+}
+.select2-dropdown {
+  background-color: white;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: -100000px;
+  width: 100%;
+  z-index: 1051;
+}

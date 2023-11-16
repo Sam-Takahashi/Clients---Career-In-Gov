@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revised Navigation</title>
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS/JS -->
+    <link rel="stylesheet" href="./css/globals.css" />
+    <link rel="stylesheet" href="./css/revised-navbar.css" />
+    <script src="./js/homepage.js" defer></script>
+    <script src="./js/navbar.js" defer></script>
+    <script src="./js/searchbar.js" defer></script>
+  </head>
+  <body>
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!-- NAVBAR --------------------------->
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <header class="cig--sticky-navbar">
+      <!-- ------------- -->
+      <!-- PC Navigation -->
+      <!-- ------------- -->
+      <nav class="cig--navbar-pc">
+        <section class="cig--navbar-wrapper-firstchild-wrapper">
+          <div class="cig--navbar-wrapper-firstchild">
+            <!-- Logo -->
+            <a href="javascript:void(0)">
+              <img
+                src="../assets/svg/career-in-government.svg"
+                alt="Careers In Government"
+                class="cig-company-logo"
+              />
+            </a>
+            <div class="cig--navbar-links-wrapper">
+              <!-- Search form -->
+              <form action="" id="id_searchbar_form" class="">
+                <ul class="cig-searchbar-wrapper">
+                  <li class="cig-searchbar-search-wrapper">
+                    <input
+                      type="text"
+                      id="dropdown__search-input"
+                      autocomplete="off"
+                      placeholder="search"
+                    />
+                    <input
+                      type="hidden"
+                      id="selectedSearchTerm"
+                      name="selectedSearchTerm"
+                    />
+                  </li>
+                  <li class="cig-searchbar-location-wrapper">
+                    <input type="text" id="" placeholder="location" />
+                  </li>
+                  <li class="cig-searchbar-submit-wrapper">
+                    <button type="submit">Search</button>
+                  </li>
+                </ul>
+              </form>
+              <!-- --------------------- -->
+              <!-- Search dropdown start -->
+              <!-- --------------------- -->
+              <section
+                id="dropdown__search-dropdown"
+                class="cig--search-dropdown-wrapper"
+              >
+                <div id="id_search_recent_wrapper" class="cig-search-dropdown">
+                  <strong>Recent</strong>
+                  <ul id="id_search_recent_list" class="cig-search-recent-list">
+                    <!-- Inserted via Cookies -->
+                  </ul>
+                  <!-- <div id="noRecentSearchesMessage" style="display: none;">No recent searches</div> -->
+                </div>
+                <div>
+                  <strong>Try searching for</strong>
+                  <ul id="id_search_suggest" class="cig-search-suggest-list">
+                    <li>remote</li>
+                    <li>Javascript Developer</li>
+                    <li>Web User Interface Developer</li>
+                    <li>Frontend Developer</li>
+                    <li>Backend Developer</li>
+                  </ul>
+                </div>
+              </section>
+
+              <!-- --------- -->
+              <!-- Nav links -->
+              <!-- --------- -->
+              <ul>
+                <!-- Rounded Buttons -->
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="cig--navbar-link-rounded cig--navbar-link-rounded-light"
+                    >Post a Job</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="cig--navbar-link-rounded cig--navbar-link-rounded-dark"
+                    >Log In</a
+                  >
+                </li>
+                <!-- Social links -->
+                <li>
+                  <a href="javascript:void(0)" class="cig--navbar-social-links">
+                    <span class="cig--navbar-social-link-in"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="cig--navbar-social-links">
+                    <span class="cig--navbar-social-link-tw"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="cig--navbar-social-links">
+                    <span class="cig--navbar-social-link-fb"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </nav>
+      <!-- ----------------- -->
+      <!-- MOBILE Navigation -->
+      <!-- ----------------- -->
+      <nav class="cig--navbar-mobile">
+        <ul class="mobile-menu-firstchild">
+          <!-- Logo -->
+          <li>
+            <a href="javascript:void(0)">
+              <img
+                src="../assets/svg/career-in-government.svg"
+                alt="Careers In Government"
+                class="cig--logo-mobile"
+              />
+            </a>
+          </li>
+          <!-- Dropdown Trigger -->
+          <li>
+            <div class="cig-mobile-container">
+              <div id="mobile__search_button"></div>
+              <div id="mobile__menu_button" class="menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <!-- Dropdown Search Menu -->
+            <section id="dropdown__search-mobile">
+              <div class="mobile-search-wrapper">
+                <!-- Search form -->
+                <form action="" id="id_searchbar_form_mobile" class="">
+                  <ul class="cig-searchbar-mobile-wrapper">
+                    <li class="cig-searchbar-search-wrapper">
+                      <input
+                        type="text"
+                        id="dropdown__search-input_mobile"
+                        autocomplete="off"
+                        placeholder="search"
+                      />
+                      <input
+                        type="hidden"
+                        id="selectedSearchTerm_mobile"
+                        name="selectedSearchTerm_mobile"
+                      />
+                    </li>
+                    <li class="cig-searchbar-location-wrapper">
+                      <input type="text" id="" placeholder="location" />
+                    </li>
+                  </ul>
+                  <!-- Recent (cookies) -->
+                  <section
+                    id="dropdown__search-dropdown_mobile"
+                    class="cig--search-dropdown-wrapper"
+                  >
+                    <div
+                      id="id_search_recent_wrapper_mobile"
+                      class="cig-search-dropdown_mobile"
+                    >
+                      <strong>Recent</strong>
+                      <ul
+                        id="id_search_recent_list_mobile"
+                        class="cig-search-recent-list"
+                      >
+                        <!-- Inserted via Cookies -->
+                      </ul>
+                      <!-- <div id="noRecentSearchesMessage" style="display: none;">No recent searches</div> -->
+                    </div>
+                    <div>
+                      <strong>Try searching for</strong>
+                      <ul
+                        id="id_search_suggest_mobile"
+                        class="cig-search-suggest-list"
+                      >
+                        <li>remote</li>
+                        <li>Javascript Developer</li>
+                        <li>Web User Interface Developer</li>
+                        <li>Frontend Developer</li>
+                        <li>Backend Developer</li>
+                      </ul>
+                    </div>
+                  </section>
+                  <!-- <div class="cig-mobile-submit-wrapper">
+                    <button type="submit">Search</button>
+                  </div> -->
+                  <div class="cig-mobile-submit-wrapper">
+                    <button id="cig__search_cancel" class="cig-search-cancel">Cancel</button>
+                    <button type="submit"
+                      class="cig-search-submit"
+                    >
+                      Show results
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </section>
+            <!-- Dropdown Menu -->
+            <div class="header__nav">
+              <nav class="mobile-nav">
+                <ul class="nav__list">
+                  <li id="dropdown__products-mobile" class="cig--dropdown">
+                    <!-- Dropdown Trigger -->
+                    <a
+                      href="javascript:void(0)"
+                      id="toggle__products-mobile"
+                      class="dropdown__link bob cig--navbar-link-plain"
+                      >PRODUCTS
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown__menu">
+                      <div class="dropdown__content">
+                        <ul class="dropdown__nav">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="javascript:void(0)"
+                              >Employer Products</a
+                            >
+                          </li>
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="javascript:void(0)"
+                              >Job Seeker Products</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="dropdown__resources-mobile" class="cig--dropdown">
+                    <!-- Dropdown Trigger -->
+                    <a
+                      href="javascript:void(0)"
+                      id="toggle__resources-mobile"
+                      class="dropdown__link cig--navbar-link-plain"
+                      >RESOURCES
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown__menu">
+                      <div class="dropdown__content">
+                        <ul class="dropdown__nav">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="javascript:void(0)"
+                              >Job Seeker Tools</a
+                            >
+                          </li>
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="javascript:void(0)"
+                              >Gov Talk</a
+                            >
+                          </li>
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="javascript:void(0)"
+                              >Community</a
+                            >
+                          </li>
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="javascript:void(0)"
+                              >Location Spotlight</a
+                            >
+                          </li>
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="javascript:void(0)"
+                              >Hire Government Initiative</a
+                            >
+                          </li>
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="javascript:void(0)"
+                              >Blog</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li id="dropdown__about-mobile" class="cig--dropdown">
+                    <!-- Dropdown Trigger -->
+                    <a
+                      href="javascript:void(0)"
+                      id="toggle__about-mobile"
+                      class="dropdown__link cig--navbar-link-plain"
+                      >About Us
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown__menu">
+                      <div class="dropdown__content">
+                        <ul class="dropdown__nav">
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="javascript:void(0)"
+                              >About Us</a
+                            >
+                          </li>
+                          <li class="dropdown__item">
+                            <a class="dropdown__link" href="javascript:void(0)"
+                              >Contact Us</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Social links -->
+                <div class="mobile-social-links-wrapper">
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="cig--navbar-social-links"
+                      >
+                        <span class="cig--navbar-social-link-in"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="cig--navbar-social-links"
+                      >
+                        <span class="cig--navbar-social-link-tw"></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="cig--navbar-social-links"
+                      >
+                        <span class="cig--navbar-social-link-fb"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Rounded Buttons -->
+                <div class="mobile-rounded-button-wrapper">
+                  <ul>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="cig--navbar-link-rounded cig--navbar-link-rounded-light"
+                        >Post a Job</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        class="cig--navbar-link-rounded cig--navbar-link-rounded-dark"
+                        >Log In</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div style="height: 150vh; background: #ddd"></div>
+  </body>
+</html>

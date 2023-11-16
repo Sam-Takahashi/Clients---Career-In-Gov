@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Select 2 Plugin -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <title>Search Jobs</title>
+    <link rel="stylesheet" href="./css/find-jobs.css" />
+    <link rel="stylesheet" href="./css/globals.css" />
+    <script src="./js/find-jobs.js" defer></script>
+    <script src="./js/search-history.js" defer></script>
+    <script src="./js/search-input.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <div class="cig-hero-wrapper">
+        <div class="cig-hero-content">
+          <h1>Search Jobs</h1>
+          <span>The Top HR and Government experts</span>
+        </div>
+      </div>
+      <div class="cig-body-wrapper">
+        <div class="cig--container-max-width">
+          <div class="cig-body-content">
+            <form
+              action=""
+              id="id_find_job_form"
+              class="cig--search-job-form cig-form-primary"
+            >
+              <div class="cig-form-control">
+                <label for="id_keyword">Keyword</label>
+                <input
+                  type="text"
+                  id="dropdown__keyword-input"
+                  autocomplete="off"
+                  placeholder="search"
+                />
+                <input
+                  type="hidden"
+                  id="selectedSearchTerm"
+                  name="selectedSearchTerm"
+                />
+                <!-- --------------------- -->
+                <!-- Search dropdown start -->
+                <!-- --------------------- -->
+                <section
+                  id="dropdown__keyword-dropdown"
+                  class="cig--search-dropdown-wrapper"
+                >
+                  <div
+                    id="id_search_recent_wrapper"
+                    class="cig-search-dropdown"
+                  >
+                    <strong>Recent</strong>
+                    <ul
+                      id="id_search_recent_list"
+                      class="cig-search-recent-list"
+                    >
+                      <!-- Inserted via Cookies -->
+                    </ul>
+                  </div>
+                  <div>
+                    <strong>Try searching for</strong>
+                    <ul
+                      id="id_search_job_suggest"
+                      class="cig-search-suggest-list"
+                    >
+                      <li>remote</li>
+                      <li>Python Developer</li>
+                      <li>web marketing</li>
+                      <li>Full stack Developer</li>
+                    </ul>
+                  </div>
+                </section>
+                <!-- ------------------- -->
+                <!-- Search dropdown end -->
+                <!-- ------------------- -->
+              </div>
+              <div class="cig-form-control">
+                <label for="id_job_type">Job Type</label>
+                <select
+                  name="jpb_type"
+                  id="id_job_type"
+                  class="select--infinite"
+                >
+                  <option value="any">Any Job Type</option>
+                  <option value="full_time">Full Time</option>
+                  <option value="part_time">Part Time</option>
+                  <option value="variable_shift">Variable Shift</option>
+                  <option value="temporary">Temporary</option>
+                  <option value="contractor">Contractor</option>
+                  <option value="intern">Intern</option>
+                  <option value="seasonal">Seasonal</option>
+                </select>
+              </div>
+              <div class="cig-form-control">
+                <label for="id_job_categories">Categories</label>
+                <select
+                  multiple="multiple"
+                  id="id_job_categories"
+                  class="select--multiple"
+                  name="JobCategory[multi_like][]"
+                >
+                  <option value="697">Accounting and Finance</option>
+                  <option value="698">Administration and Management</option>
+                  <option value="699">
+                    Administrative Analysis and Research
+                  </option>
+                  <option value="700">Agriculture or Farm or Ranch</option>
+                  <option value="701">Animal Control or Services</option>
+                  <option value="702">Architecture</option>
+                  <option value="703">
+                    Agriculture / Farm / Ranch Related
+                  </option>
+                  <option value="704">Aviation or Harbor</option>
+                  <option value="705">Building Maintenance</option>
+                  <option value="706">Building and Safety</option>
+                  <option value="707">
+                    Clerical and Administrative Support
+                  </option>
+                  <option value="708">Code Enforcement and Inspections</option>
+                  <option value="709">
+                    Community and Economic Development
+                  </option>
+                  <option value="1132">
+                    Community Relations or PR and Marketing
+                  </option>
+                  <option value="710">Construction and Skilled Trades</option>
+                  <option value="711">CORRECTIONS</option>
+                  <option value="712">Court Administration</option>
+                  <option value="713">Criminology and Forensics</option>
+                  <option value="714">Custodial and Janitorial</option>
+                  <option value="351">Customer Service</option>
+                  <option value="715">Dispatch and Telecommunications</option>
+                  <option value="716">Education and Training</option>
+                  <option value="717">Emergency Management</option>
+                  <option value="355">Engineering</option>
+                  <option value="718">Environmental Services</option>
+                  <option value="719">Facilities Management</option>
+                  <option value="720">Fire and EMS</option>
+                  <option value="721">Fleet Management</option>
+                  <option value="722">Forestry</option>
+                  <option value="723">
+                    Fundraising or Grants Administration
+                  </option>
+                  <option value="724">GIS and Surveying</option>
+                  <option value="725">Grounds and Landscaping Services</option>
+                  <option value="726">Historic Preservation</option>
+                  <option value="727">Housing</option>
+                  <option value="728">Human and Social Services</option>
+                  <option value="740">Human Resources and Personnel</option>
+                  <option value="729">
+                    Information Technology and Communication Services
+                  </option>
+                  <option value="730">Internship</option>
+                  <option value="731">Legal Services</option>
+                  <option value="732">Library Services</option>
+                  <option value="733">Marketing and Public Relations</option>
+                  <option value="734">Municipal or County Clerk</option>
+                  <option value="735">Museum and Arts</option>
+                  <option value="736">Natural Resources</option>
+                  <option value="737">non-profit management</option>
+                  <option value="738">Nutrition and Food Services</option>
+                  <option value="739">Parks and Recreation</option>
+                  <option value="741">Planning and Development</option>
+                  <option value="742">Political or Public Affairs</option>
+                  <option value="743">Probation</option>
+                  <option value="744">Project Management</option>
+                  <option value="745">Public Health</option>
+                  <option value="746">
+                    Public Information and Intergovernmental Affairs
+                  </option>
+                  <option value="747">Public Safety</option>
+                  <option value="748">Public Works</option>
+                  <option value="749">Purchasing and Warehouse</option>
+                  <option value="384">Real Estate</option>
+                  <option value="750">Records Management</option>
+                  <option value="751">Redevelopment</option>
+                  <option value="752">Regulatory and Licensing</option>
+                  <option value="753">
+                    Risk Management and Insurance Claims
+                  </option>
+                  <option value="1134">Sales</option>
+                  <option value="754">Sanitation and Solid Waste</option>
+                  <option value="755">Sciences and Laboratory</option>
+                  <option value="756">Tourism and Convention Services</option>
+                  <option value="757">Transportation or Transit</option>
+                  <option value="758">Utilities</option>
+                  <option value="759">Veteran Services</option>
+                  <option value="760">Water and Wastewater Treatment</option>
+                  <option value="379">Other</option>
+                </select>
+              </div>
+              <div class="cig-form-control">
+                <label for="id_job_location">Location</label>
+                <input
+                  type="text"
+                  id="id_job_location"
+                  name="location"
+                  placeholder="Location"
+                />
+              </div>
+              <div class="cig-form-control">
+                <label for="id_search_within">Search within</label>
+                <select
+                  name="search_within"
+                  id="id_search_within"
+                  class="select--infinite"
+                >
+                  <option value="10">10 miles</option>
+                  <option value="25">25 miles</option>
+                  <option value="50">50 miles</option>
+                  <option value="100">100 miles</option>
+                  <option value="200">200 miles</option>
+                </select>
+              </div>
+              <div class="cig-form-control">
+                <label for="id_apply_by">Apply By</label>
+                <div class="cig-date-container">
+                  <div class="date-icon-wrapper">
+                    <input
+                      type="date"
+                      id="cig__date_input"
+                      class="date-icon-input"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="cig-form-cta-control">
+                <button type="submit" class="cig-form-primary-cta">
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div style="height: 300px; background: #000"></div>
+  </body>
+</html>
