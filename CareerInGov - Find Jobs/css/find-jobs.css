@@ -88,9 +88,7 @@ input:focus {
   top: 0;
   right: 0;
   background: #f8f8f8;
-  background-image: url("../assets/find-job-main.webp");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../assets/find-job-main.webp") repeat center;
   background-size: cover;
 }
 .cig-body-content {
@@ -357,7 +355,7 @@ button.cig-form-primary-cta {
   border: none;
   font-size: 100%;
   margin-top: 8px;
-  margin-left: 5px;
+  margin-left: 8px;
   padding: 0;
   max-width: 100%;
   resize: none;
@@ -413,4 +411,48 @@ button.cig-form-primary-cta {
   left: -100000px;
   width: 100%;
   z-index: 1051;
+}
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice {
+  background-color: #eeeeee;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 0;
+  padding-left: 20px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice__remove {
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid #c9c9c9;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #999;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0 4px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.select2-container--default
+  .select2-selection--multiple
+  .select2-selection__choice__display {
+  cursor: default;
+  padding-left: 2px;
+  padding-right: 5px;
+  line-height: 1.6em;
 }

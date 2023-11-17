@@ -1,3 +1,184 @@
-.items-cell {
+/* ------------------------------------- */
+/* H E R O   C I T I E S   S E C T I O N */
+/* ------------------------------------- */
+.cig-cities-hero-wrapper {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+  height: 260px;
+  background: url(../assets/city.webp) center 40% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.cig-cities-hero-wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 7, 20, 0.1);
+  z-index: 0;
+}
+.cig-cities-hero-content {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+.cig-cities-hero-content h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+.cig-cities-hero-content p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .cig-cities-hero-wrapper {
+    height: 220px;
+    padding: 0 20px;
+  }
+}
+
+/* ----------------------------- */
+/* --- C I T I E S   L I S T --- */
+/* ----------------------------- */
+.cig-bg-secondary {
+  background: var(--color-blue-light-bg);
+  padding: 100px 0 70px;
+  margin-top: -50px;
+}
+
+ul.cig--list-three-col {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+ul.cig--list-three-col li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+}
+
+span.cig-toggle-items {
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 6px 16px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px -3px 0px 0px #efefef;
+  -moz-box-shadow: inset 0px -3px 0px 0px #efefef;
+  box-shadow: inset 0px -3px 0px 0px #efefef;
+  font-size: 24px;
+  font-weight: 600;
+}
+span.cig-toggle-items::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='11' viewBox='0 0 18 11' fill='none'%3E%3Cpath d='M2.61255 0.44913L0.691406 2.39305L8.86648 10.665L17.0416 2.39305L15.1204 0.44913L8.86648 6.76342L2.61255 0.44913Z' fill='%23112D51'/%3E%3C/svg%3E");
+  height: 15px;
+  width: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+span.cig-toggle-items::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: rgb(108, 52, 11);
+  background: linear-gradient(
+    90deg,
+    rgba(108, 52, 11, 1) 0%,
+    rgba(213, 188, 170, 1) 100%
+  );
+}
+
+span.cig-list--active {
+  background: #fbfdff;
+}
+.cig-list--active.cig-toggle-items::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='11' viewBox='0 0 18 11' fill='none'%3E%3Cpath d='M2.61255 0.44913L0.691406 2.39305L8.86648 10.665L17.0416 2.39305L15.1204 0.44913L8.86648 6.76342L2.61255 0.44913Z' fill='%23112D51'/%3E%3C/svg%3E");
+  height: 15px;
+  width: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
+
+
+@media (max-width: 768px) {
+  ul.cig--list-three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dropdown list */
+ul.cig-items-list-wrapper {
   display: none;
+}
+ul.cig-items-list-wrapper {
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 2;
+  width: calc(100% - 50px);
+  border-bottom: 3px solid #efefef;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  padding: 4px 12px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+ul.cig-items-list-wrapper li span {
+  color: var(--color-blue-light);
+  font-size: 16px;
+}
+
+ul.cig-items-list-wrapper li span.cig-content-head {
+  color: var(--color-grey-dark);
+    /* overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; */
+}
+ul.cig-items-list-wrapper li a {
+  text-decoration: none;
+}
+ul.cig-items-list-wrapper li a:hover {
+  opacity: 0.7;
+}
+/* Inner URL list */
+ul.cig-list-dropdown {
+  padding: 0;
+}
+ul.cig-list-dropdown li {
+  margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+  .cig-bg-secondary {
+    background: var(--color-blue-light-bg);
+    padding: 100px 0;
+  }
 }
