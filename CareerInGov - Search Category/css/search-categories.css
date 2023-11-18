@@ -1,8 +1,8 @@
-/* ------------------------------------- */
-/* H E R O   C I T I E S   S E C T I O N */
-/* ------------------------------------- */
-.cig-state-hero-wrapper {
-  background: url(../assets/state.webp) center 40% / cover no-repeat;
+/* ----------------------------- */
+/* H E R O   C A T E G O R I E S */
+/* ----------------------------- */
+.cig-category-hero-wrapper {
+  background: url(../assets/category.webp) center 10% / cover no-repeat;
 }
 
 /* Global */
@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 768px) {
-  .cig-light-hero-wrapper {
+  .cig-states-hero-wrapper {
     height: 220px;
     padding: 0 20px;
   }

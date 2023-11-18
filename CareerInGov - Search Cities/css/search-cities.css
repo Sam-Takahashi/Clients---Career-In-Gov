@@ -2,16 +2,20 @@
 /* H E R O   C I T I E S   S E C T I O N */
 /* ------------------------------------- */
 .cig-cities-hero-wrapper {
+  background: url(../assets/city.webp) center 40% / cover no-repeat;
+}
+
+/* Global */
+.cig-light-hero-wrapper {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
   height: 260px;
-  background: url(../assets/city.webp) center 40% / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 1;
 }
-.cig-cities-hero-wrapper::after {
+.cig-light-hero-wrapper::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -19,28 +23,35 @@
   background: rgba(0, 7, 20, 0.1);
   z-index: 0;
 }
-.cig-cities-hero-content {
+.cig-light-hero-content {
   text-align: center;
   margin-bottom: 1rem;
   color: #ffffff;
   position: relative;
   z-index: 2;
 }
-.cig-cities-hero-content h1 {
+.cig-light-hero-content h1 {
   text-transform: uppercase;
   font-size: 32px;
   font-weight: 700;
   margin: 5px 0;
 }
-.cig-cities-hero-content p {
+.cig-light-hero-content span {
   font-size: 16px;
   font-weight: 400;
 }
 
 @media (max-width: 768px) {
-  .cig-cities-hero-wrapper {
+  .cig-light-hero-wrapper {
     height: 220px;
     padding: 0 20px;
+  }
+  .cig-light-hero-content h1 {
+    font-size: 26px;
+  }
+  .cig-light-hero-content span {
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 
@@ -125,7 +136,6 @@ span.cig-list--active {
   transition: 0.2s ease;
 }
 
-
 @media (max-width: 768px) {
   ul.cig--list-three-col {
     grid-template-columns: 1fr;
@@ -155,10 +165,11 @@ ul.cig-items-list-wrapper li span {
 }
 span.cig-content-head {
   color: var(--color-grey-dark);
-  /* overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 80%;
 }
 span.cig--count {
   color: var(--color-blue-light);
@@ -166,6 +177,8 @@ span.cig--count {
 
 ul.cig-items-list-wrapper li a {
   text-decoration: none;
+  display: flex;
+  gap: 6px;
 }
 ul.cig-items-list-wrapper li a:hover {
   opacity: 0.7;
