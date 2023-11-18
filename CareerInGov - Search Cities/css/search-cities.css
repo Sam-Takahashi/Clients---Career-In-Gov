@@ -151,17 +151,19 @@ ul.cig-items-list-wrapper {
   overflow-y: auto;
 }
 ul.cig-items-list-wrapper li span {
-  color: var(--color-blue-light);
   font-size: 16px;
 }
-
-ul.cig-items-list-wrapper li span.cig-content-head {
+span.cig-content-head {
   color: var(--color-grey-dark);
-    /* overflow: hidden;
+  /* overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical; */
 }
+span.cig--count {
+  color: var(--color-blue-light);
+}
+
 ul.cig-items-list-wrapper li a {
   text-decoration: none;
 }
@@ -178,7 +180,6 @@ ul.cig-list-dropdown li {
 
 @media (max-width: 768px) {
   .cig-bg-secondary {
-    background: var(--color-blue-light-bg);
     padding: 100px 0;
   }
 }
