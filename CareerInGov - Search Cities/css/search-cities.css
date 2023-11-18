@@ -61,6 +61,7 @@
 .cig-bg-secondary {
   background: var(--color-blue-light-bg);
   padding: 100px 0 70px;
+  min-height: 30vh;
   margin-top: -50px;
 }
 
